@@ -1,7 +1,7 @@
 import {Route, Switch} from 'react-router';
 import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import ReactDom from 'react-dom';
+// import ReactDom from 'react-dom';
 import Intellectual from './information_pages/Intellectual';
 import Occupational from './information_pages/Occupational';
 import Physical from './information_pages/Physical';
@@ -10,8 +10,6 @@ import Psychological from './information_pages/Psychological';
 import Environmental from './information_pages/Environmental';
 import Spiritual from './information_pages/Spiritual';
 import Social from './information_pages/Social';
-
-var destination = document.querySelector("#root");
 
 class App extends React.Component{
     render() {
@@ -85,6 +83,5 @@ class Landing extends React.Component{
         )
     }
 };
-
 
 export default App;
