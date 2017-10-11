@@ -1,7 +1,7 @@
 import React from 'react';
-import InfoHead from './infoResources/InfoHead';
-import InfoBody from './infoResources/InfoBody';
-import InfoLinks from './infoResources/InfoLinks';
+import InfoHead from './infoResources/infoHead';
+import InfoBody from './infoResources/infoBody';
+import InfoLinks from './infoResources/infoLinks';
 
 class Occupational extends React.Component{
     render() {
