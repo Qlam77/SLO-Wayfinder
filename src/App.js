@@ -11,6 +11,7 @@ import Psychological from './information_pages/Psychological';
 import Environmental from './information_pages/Environmental';
 import Spiritual from './information_pages/Spiritual';
 import Social from './information_pages/Social';
+import Tab from './mobile_layout/mobile_components';
 
 class App extends React.Component{
   render() {
@@ -19,7 +20,7 @@ class App extends React.Component{
         <BrowserRouter>
           <div>
             <Switch>
-              <Route exact path = '/' component={Landing}/>
+              <Route exact path = '/' component={Tab}/>
               <Route exact path = '/Intellectual' component={Intellectual}/>
               <Route exact path = '/Occupational' component={Occupational}/>
               <Route exact path = '/Physical' component={Physical}/>
@@ -53,7 +54,7 @@ class Header extends React.Component {
 class Service extends React.Component {
   render() {
     return (
-      <Col l={4} offset={this.props.offset}>
+      <Col s={4} offset={this.props.offset}>
         <Link to={this.props.name}>
           <Figure src={this.props.src} alt={this.props.name}/>
         </Link>
@@ -65,9 +66,9 @@ class Service extends React.Component {
 class Figure extends React.Component {
   render() {
     const figureStyle = {
-      height: 120,
-      width: 120,
-      margin: 20,
+      height: "100%",
+      width: "100%",
+      margin: "auto",
       WebkitFilter: "drop-shadow(0px 0px 5px #666)"
     }
     return(
