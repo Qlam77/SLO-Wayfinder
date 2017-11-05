@@ -1,7 +1,6 @@
 import {Route, Switch} from 'react-router';
 import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
-// import ReactDom from 'react-dom';
 import {Row, Col} from 'react-materialize'
 import Intellectual from './information_pages/Intellectual';
 import Occupational from './information_pages/Occupational';
@@ -11,44 +10,57 @@ import Psychological from './information_pages/Psychological';
 import Environmental from './information_pages/Environmental';
 import Spiritual from './information_pages/Spiritual';
 import Social from './information_pages/Social';
+import MainLanding from './components/MainLanding'
+import Bookstore from './information_pages/Bookstore'
 
 class App extends React.Component{
   render() {
     return (
-      <div>
-        <BrowserRouter>
-          <div>
-            <Switch>
-              <Route exact path = '/' component={Landing}/>
-              <Route exact path = '/Intellectual' component={Intellectual}/>
-              <Route exact path = '/Occupational' component={Occupational}/>
-              <Route exact path = '/Physical' component={Physical}/>
-              <Route exact path = '/Financial' component={Financial}/>
-              <Route exact path = '/Psychological' component={Psychological}/>
-              <Route exact path = '/Environmental' component={Environmental}/>
-              <Route exact path = '/Spiritual' component={Spiritual}/>
-              <Route exact path = '/Social' component={Social}/>
-            </Switch>
-          </div>
-        </BrowserRouter>
-      </div>
+        <div >
+          <BrowserRouter>
+            <div>
+              <Switch>
+                  <Route exact path = '/' component={MainLanding}/>
+                  <Route exact path = '/Bookstore' component={Bookstore}/>
+              </Switch>
+            </div>
+          </BrowserRouter>
+            {/*<div>*/}
+              {/*<BrowserRouter>*/}
+                {/*<div>*/}
+                {/*<Switch>*/}
+                  {/*<Route exact path = '/' component={Landing}/>*/}
+                  {/*<Route exact path = '/Intellectual' component={Intellectual}/>*/}
+                  {/*<Route exact path = '/Occupational' component={Occupational}/>*/}
+                  {/*<Route exact path = '/Physical' component={Physical}/>*/}
+                  {/*<Route exact path = '/Financial' component={Financial}/>*/}
+                  {/*<Route exact path = '/Psychological' component={Psychological}/>*/}
+                  {/*<Route exact path = '/Environmental' component={Environmental}/>*/}
+                  {/*<Route exact path = '/Spiritual' component={Spiritual}/>*/}
+                  {/*<Route exact path = '/Social' component={Social}/>*/}
+                  {/*</Switch>*/}
+                {/*</div>*/}
+              {/*</BrowserRouter>*/}
+            {/*</div>*/}
+
+        </div>
     );
   }
-};
+}
 
 class Header extends React.Component {
   render() {
     const headerStyle = {
       width: 200,
       height: 200,
-    }
+    };
     return (
       <Col l={12}>
       <img style={headerStyle} src={this.props.src} alt="bcit"/>
       </Col>
     );
   }
-};
+}
 
 class Service extends React.Component {
   render() {
@@ -60,7 +72,7 @@ class Service extends React.Component {
       </Col>
     );
   }
-};
+}
 
 class Figure extends React.Component {
   render() {
@@ -69,12 +81,12 @@ class Figure extends React.Component {
       width: 120,
       margin: 20,
       WebkitFilter: "drop-shadow(0px 0px 5px #666)"
-    }
+    };
     return(
       <img style={figureStyle} src={this.props.src} alt={this.props.name}/>
     );
   }
-};
+}
 
 class Landing extends React.Component{
   render() {
