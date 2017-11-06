@@ -75,66 +75,57 @@ class tabElement extends React.Component {
                 </Row>
                 <br/>
                 <br/>
-                <br/>
                 <Row>
-                    <Col xs={3} className="dropdown-leftDown" >
-                        <DropdownButton dropup title={<ImageLoader src="./images/psychological.jpg" name="Psychological"/>} key={1} noCaret id={`dropdown-no-caret-$1`}>
-                            <LinkDescription title="Intellectual WellBeing">
-                                <Description title="Study Smarter, Not Harder">
-                                    Recogizing creative abilities and finding new ways to continually expand knowledge and challenge your mind
+                    <Col xs={3} className="dropdown-leftTop" >
+                        <DropdownButton title={<ImageLoader src="./images/psychological.jpg" name="Psychological"/>} key={5} noCaret id={`dropdown-no-caret-$5`}>
+                            <LinkDescription title="Psychological Wellbeing">
+                                <Description title="Make Time for Me Time">
+                                    Maintaining a positive outlook on life by developing effective coping strategies to reduce and manage stress, and through accepting and exploring oneself.
                                 </Description>
                             </LinkDescription>
                             <MenuItem divider/>
                             <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                            <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-leftDown" >
-                        <DropdownButton dropup title={<ImageLoader src="./images/environmental.jpg" name="Environmental"/>} key={2} noCaret id={`dropdown-no-caret-$2`}>
-                            <LinkDescription title="Occupational WellBeing">
-                                <Description title="Launch Into Your Career">
-                                    <div className="testWrap">
-                                            Creating networks, building skills, challenging oneself through new career opportunities and developing a sense of satisfaction and enrichment through one's work
-                                    </div>
-                                </Description>
-                            </LinkDescription>
-                            <MenuItem divider/>
-                            <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
-                            </MenuItem>
-                        </DropdownButton>
+                    <Col xs={3} className="dropdown-leftTop" >
+                        <DropdownButton title={<ImageLoader src="./images/environmental.jpg" name="Environmental"/>} key={6} noCaret id={`dropdown-no-caret-$6`}>
+                             <LinkDescription title="Environmental WellBeing">
+                                 <Description title="Creaate Space for Your Wellbeing">
+                                     Creating and occupying safe, supporting, inclusive and sustainable environments that support wellbeing.
+                                 </Description>
+                             </LinkDescription>
+                             <MenuItem divider/>
+                             <MenuItem header>
+                             <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                             </MenuItem>
+                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-rightDown">
-                        <DropdownButton dropup pullRight title={<ImageLoader src="./images/spiritual.jpg" name="Spiritual"/>} key={3} noCaret id={`dropdown-no-caret-$3`}>
-                            <LinkDescription title="Physical WellBeing">
-                                <Description title="Wellbeing for Every Body">
-                                    <div className="testWrap">
-                                        Creating opportunities and recognizing the need for sleep, healthy eating, active living and self-care practices.
-                                    </div>
+                    <Col xs={3} className="dropdown-rightTop">
+                        <DropdownButton pullRight title={<ImageLoader src="./images/spiritual.jpg" name="Spiritual"/>} key={7} noCaret id={`dropdown-no-caret-$7`}>
+                            <LinkDescription title="Spiritual WellBeing">
+                                <Description title="Explore Purpose and Meaning">
+                                    Develop and expanding a sense of purpose and meaning in life.
                                 </Description>
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                            <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-rightDown">
-                        <DropdownButton dropup pullRight title={<ImageLoader src="./images/social.jpg" name="Social"/>} key={4} noCaret id={`dropdown-no-caret-$4`}>
-                            <LinkDescription title="Financial WellBeing">
-                                <Description title="Invest in Your Financial Health">
-                                    Being Aware of and satisfied with your
-                                    <br/>
-                                    current financial situation and foreseeable future
-                                    <br/>
-                                    financial situations.
+                    <Col xs={3} className="dropdown-rightTop">
+                        <DropdownButton pullRight title={<ImageLoader src="./images/social.jpg" name="Social"/>} key={8} noCaret id={`dropdown-no-caret-$8`}>
+                            <LinkDescription title="Social WellBeing">
+                                <Description title="Engage with (Y)Our Community">
+                                    Developing and mainataning a sense of connection and belonging through healthy relationships and support systems.
                                 </Description>
-                            </LinkDescription>
-                            <MenuItem divider />
-                            <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
-                            </MenuItem>
+                        </LinkDescription>
+                        <MenuItem divider />
+                        <MenuItem header>
+                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                        </MenuItem>
                         </DropdownButton>
                     </Col>
                 </Row>

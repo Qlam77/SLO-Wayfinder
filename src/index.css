@@ -90,35 +90,14 @@ html body div#root div div div ul.tabs.center div.indicator {
   margin-right: 25%;
 }
 
-.dropdown-leftDown > .open > ul:nth-child(2)::after{
-  content: "";
-  position: absolute;
-  bottom: -13px;
-  left: 5px;
-  border-width: 15px 15px 0;
-  border-style: solid;
-  border-color: white transparent;
-  display: block;
-  width: 0;
-}
-
-
-.dropdown-rightDown > .open > ul:nth-child(2)::after{
-  content: "";
-  position: absolute;
-  bottom: -13px;
-  right: 5px;
-  border-width: 15px 15px 0;
-  border-style: solid;
-  border-color: white transparent;
-  display: block;
-  width: 0;
-}
-
 .dropdown-menu {
   width: 40vw;
   /*Testing*/
-  /*position: relative;*/
+  position: relative;
+}
+
+.dropdown-rightTop > .open > ul:nth-child(2) {
+  left: -32.5vw;
 }
 
 .wrapper {
@@ -130,4 +109,10 @@ html body div#root div div div ul.tabs.center div.indicator {
   -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
+}
+
+.imageResizer {
+  /*Testing*/
+  width: 7.5vw;
+  height: 7.5vw;
 }
