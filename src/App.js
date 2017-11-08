@@ -3,15 +3,9 @@ import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
 // import ReactDom from 'react-dom';
 import {Row, Col} from 'react-materialize'
-import Intellectual from './information_pages/Intellectual';
-import Occupational from './information_pages/Occupational';
-import Physical from './information_pages/Physical';
-import Financial from './information_pages/Financial';
-import Psychological from './information_pages/Psychological';
-import Environmental from './information_pages/Environmental';
-import Spiritual from './information_pages/Spiritual';
-import Social from './information_pages/Social';
-import Tab from './mobile_layout/mobile_components';
+import MobileLanding from './mobile_layout/landing_page';
+import ServiceSelector from './mobile_layout/service_selection';
+import ServiceInfo from './mobile_layout/service_info';
 
 class App extends React.Component{
   render() {
@@ -20,15 +14,9 @@ class App extends React.Component{
         <BrowserRouter>
           <div>
             <Switch>
-              <Route exact path = '/' component={Tab}/>
-              <Route exact path = '/Intellectual' component={Intellectual}/>
-              <Route exact path = '/Occupational' component={Occupational}/>
-              <Route exact path = '/Physical' component={Physical}/>
-              <Route exact path = '/Financial' component={Financial}/>
-              <Route exact path = '/Psychological' component={Psychological}/>
-              <Route exact path = '/Environmental' component={Environmental}/>
-              <Route exact path = '/Spiritual' component={Spiritual}/>
-              <Route exact path = '/Social' component={Social}/>
+              <Route exact path = '/' component={MobileLanding}/>
+              <Route exact path = '/Intellectual' component={ServiceSelector}/>
+              <Route exact path = '/info' component={ServiceInfo}/>
             </Switch>
           </div>
         </BrowserRouter>
