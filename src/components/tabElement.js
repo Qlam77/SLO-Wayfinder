@@ -13,7 +13,7 @@ class tabElement extends React.Component {
         return (
             <ButtonToolbar>
                 <Row>
-                    <Col xs={3} className="dropdown-leftTop" >
+                    <Col xs={3} className="dropdown-leftTop1" >
                         <DropdownButton title={<ImageLoader src="./images/intellectual.jpg" name="Intellectual"/>} key={1} noCaret id={`dropdown-no-caret-$1`}>
                             <LinkDescription title="Intellectual WellBeing">
                                 <Description title="Study Smarter, Not Harder">
@@ -23,11 +23,18 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider/>
                             <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                                <Row>
+                                    <Col xs={6}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                    <Col xs={6}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                </Row>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-leftTop" >
+                    <Col xs={3} className="dropdown-leftTop2" >
                         <DropdownButton title={<ImageLoader src="./images/occupational.jpg" name="Occupational"/>} key={2} noCaret id={`dropdown-no-caret-$2`}>
                             <LinkDescription title="Occupational WellBeing">
                                 <Description title="Launch Into Your Career">
@@ -40,10 +47,11 @@ class tabElement extends React.Component {
                             <MenuItem divider/>
                             <MenuItem header>
                                 <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-rightTop">
+                    <Col xs={3} className="dropdown-rightTop1">
                         <DropdownButton pullRight title={<ImageLoader src="./images/physical.jpg" name="Physical"/>} key={3} noCaret id={`dropdown-no-caret-$3`}>
                             <LinkDescription title="Physical WellBeing">
                                 <Description title="Wellbeing for Every Body">
@@ -53,11 +61,24 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                                <Row>
+                                    <Col xs={3}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                    <Col xs={3}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                    <Col xs={3}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                    <Col xs={3}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                </Row>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-rightTop">
+                    <Col xs={3} className="dropdown-rightTop2">
                         <DropdownButton pullRight title={<ImageLoader src="./images/financial.jpg" name="Financial"/>} key={4} noCaret id={`dropdown-no-caret-$4`}>
                             <LinkDescription title="Financial WellBeing">
                                 <Description title="Invest in Your Financial Health">
@@ -68,7 +89,24 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                                <Col xs={2}>
+                                    <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
+                                </Col>
+                                <Col xs={2}>
+                                    <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
+                                </Col>
+                                <Col xs={2}>
+                                    <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
+                                </Col>
+                                <Col xs={2}>
+                                    <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
+                                </Col>
+                                <Col xs={2}>
+                                    <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
+                                </Col>
+                                <Col xs={2}>
+                                    <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
+                                </Col>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -76,7 +114,7 @@ class tabElement extends React.Component {
                 <br/>
                 <br/>
                 <Row>
-                    <Col xs={3} className="dropdown-leftTop" >
+                    <Col xs={3} className="dropdown-leftTop1" >
                         <DropdownButton title={<ImageLoader src="./images/psychological.jpg" name="Psychological"/>} key={5} noCaret id={`dropdown-no-caret-$5`}>
                             <LinkDescription title="Psychological Wellbeing">
                                 <Description title="Make Time for Me Time">
@@ -89,7 +127,7 @@ class tabElement extends React.Component {
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-leftTop" >
+                    <Col xs={3} className="dropdown-leftTop2" >
                         <DropdownButton title={<ImageLoader src="./images/environmental.jpg" name="Environmental"/>} key={6} noCaret id={`dropdown-no-caret-$6`}>
                              <LinkDescription title="Environmental WellBeing">
                                  <Description title="Creaate Space for Your Wellbeing">
@@ -102,7 +140,7 @@ class tabElement extends React.Component {
                              </MenuItem>
                          </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-rightTop">
+                    <Col xs={3} className="dropdown-rightTop1">
                         <DropdownButton pullRight title={<ImageLoader src="./images/spiritual.jpg" name="Spiritual"/>} key={7} noCaret id={`dropdown-no-caret-$7`}>
                             <LinkDescription title="Spiritual WellBeing">
                                 <Description title="Explore Purpose and Meaning">
@@ -115,7 +153,7 @@ class tabElement extends React.Component {
                             </MenuItem>
                         </DropdownButton>
                     </Col>
-                    <Col xs={3} className="dropdown-rightTop">
+                    <Col xs={3} className="dropdown-rightTop2">
                         <DropdownButton pullRight title={<ImageLoader src="./images/social.jpg" name="Social"/>} key={8} noCaret id={`dropdown-no-caret-$8`}>
                             <LinkDescription title="Social WellBeing">
                                 <Description title="Engage with (Y)Our Community">
