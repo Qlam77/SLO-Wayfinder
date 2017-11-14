@@ -63,6 +63,11 @@ html body div#root div div div ul.tabs.center div.indicator {
   margin-right: 25%;
 }
 
+.img-center{
+  margin: auto;
+  display: block;
+}
+
 .dropdown-menu {
   width: 67vw;
   /*Testing*/

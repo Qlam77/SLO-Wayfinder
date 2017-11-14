@@ -4,7 +4,7 @@ import {Row, Col} from 'react-bootstrap';
 import ContentWrapper from "../components/ContentWrapper";
 import DesktopHeader from "../components/DesktopHeader";
 import MenuLinker from "../components/MenuLinker";
-import BookstoreIcon from "../components/images/bookstore.jpg";
+import BookstoreIcon from "../components/images/bookstore.png";
 import MiniWrapper from "../components/MiniContentWrapper";
 
 class Bookstore extends React.Component{
@@ -19,14 +19,24 @@ class Bookstore extends React.Component{
                 <ContentWrapper>
                     <Row>
                         <Col xsOffset={4} xs={4}>
-                            <MiniWrapper><h3 className="text-center">Bookstore</h3></MiniWrapper>
+                            <MiniWrapper>
+                                <h3 className="text-center">Bookstore</h3>
+                            </MiniWrapper>
                         </Col>
                     </Row>
                     <br/>
                     <br/>
                     <Row>
                         <Col xsOffset={1} xs={4}>
-                            <MiniWrapper><img src="images/bookstore2.jpg" class="img-responsive"/></MiniWrapper>
+                            <MiniWrapper>
+                                <figure>
+                                    <img src="images/bookstore2.jpg" class="img-responsive"/>
+                                    <figcaption className="text-center">We're your one stop shop for all your school needs!
+                                        Course textbooks, reference books, trades safety gear, gifts,
+                                        stationery, we've got it all.</figcaption>
+                                </figure>
+                            </MiniWrapper>
+                            <a href="https://www.bcit.ca/bookstore/?icn=bookstore&icl=keymatch-bcit">More Info</a>
                         </Col>
                         <Col xsOffset={1} xs={5}>
                             <MiniWrapper>
@@ -41,7 +51,7 @@ class Bookstore extends React.Component{
                                             <li><i>Saturday-Sunday:</i>  CLOSED</li>
                                             <li><b>Contact:</b></li>
                                             <li>Phone: 604-432-8379</li>
-                                            <li>Email: bookstore@bcit.ca</li>
+                                            <li>Email: <i>bookstore@bcit.ca</i></li>
                                         </ul>
                                     </Col>
                                     <Col xs={6}>
@@ -54,7 +64,7 @@ class Bookstore extends React.Component{
                                             <li><i>Saturday-Sunday:</i>  CLOSED</li>
                                             <li><b>Contact:</b></li>
                                             <li>Phone: 604-412-7799</li>
-                                            <li>Email: bookstore@bcit.ca</li>
+                                            <li>Email: <i>bookstore@bcit.ca</i></li>
                                         </ul>
                                     </Col>
                                 </Row>
@@ -72,21 +82,12 @@ class Bookstore extends React.Component{
                             <Col xsOffset={1} xs={1}>
                                 <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
                             </Col>
-                            <Col xs={1}>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
-                            </Col>
-                            <Col xs={1}>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
-                            </Col>
-                            <Col xs={1}>
-                                <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore"></MenuLinker>
-                            </Col>
                         </Row>
                         <br/>
                         <Row>
                             <Col xsOffset={9} xs={2}>
                                 <div className="endFooter">
-                                        <Link to="/">Back</Link>
+                                    <Link to="/"><button>Back to Home</button></Link>
                                 </div>
                             </Col>
                         </Row>

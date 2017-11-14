@@ -12,6 +12,9 @@ import Spiritual from './information_pages/Spiritual';
 import Social from './information_pages/Social';
 import MainLanding from './components/MainLanding'
 import Bookstore from './information_pages/Bookstore'
+import Ejobs from './information_pages/Ejobs'
+import Recreation from './information_pages/Recreation'
+import StudentFinancialAid from './information_pages/StudentFinancialAid'
 
 class App extends React.Component{
   render() {
@@ -22,6 +25,9 @@ class App extends React.Component{
               <Switch>
                   <Route exact path = '/' component={MainLanding}/>
                   <Route exact path = '/Bookstore' component={Bookstore}/>
+                  <Route exact path = '/Ejobs' component={Ejobs}/>
+                  <Route exact path = '/Recreation' component={Recreation}/>
+                  <Route exact path = '/StudentFinancialAid' component={StudentFinancialAid}/>
               </Switch>
             </div>
           </BrowserRouter>
