@@ -3,7 +3,9 @@ import DesktopHeader from './DesktopHeader'
 import $ from 'jquery';
 import BookstoreIcon from './images/bookstore.jpg';
 import TabElement from './tabElement';
-import ContentWrapper from './ContentWrapper'
+import ContentWrapper from './ContentWrapper';
+import MiniWrapper from './MiniContentWrapper';
+import {Row, Col} from 'react-bootstrap';
 
 $(document).ready(function(){
     $(".someContent").on("click", function() {
@@ -27,6 +29,14 @@ class MainLanding extends React.Component {
                 <div className="mainPage"/>
                 <DesktopHeader/>
                 <ContentWrapper>
+                    <Row>
+                        <Col xsOffset={4} xs={4}>
+                            <MiniWrapper>
+                                <h4 className="text-center">8 Dimensions of wellbeing</h4>
+                            </MiniWrapper>
+                        </Col>
+                    </Row>
+                    <br/>
                     <TabElement/>
                 </ContentWrapper>
             </div>

@@ -132,7 +132,7 @@ html body div#root div div div ul.tabs.center div.indicator {
 }
 
 .dropdown-rightTop2 > .open > ul:nth-child(2) {
-  left: -56.645vw;
+  left: -56.635vw;
 }
 
 .dropdown-rightTop2 > .open > ul:nth-child(2)::after{
@@ -150,18 +150,34 @@ html body div#root div div div ul.tabs.center div.indicator {
 }
 
 .wrapper {
-  padding-top: 5%;
+  padding-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 2%;
   background-color: yellow;
   -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
+  overflow-x: hidden;
+}
+
+.miniWrapper {
+  background-color: #00397d;
+  color: white;
+  margin: 1%;
+  padding: 1%;
+  /*-webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);*/
+  /*-moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);*/
+  /*box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);*/
 }
 
 .imageResizer {
   /*Testing*/
   width: 7.5vw;
   height: 7.5vw;
+}
+
+.endFooter {
+  float: right;
 }
