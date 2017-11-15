@@ -20,7 +20,7 @@ class Bookstore extends React.Component{
                     <Row>
                         <Col xsOffset={3} xs={6}>
                             <MiniWrapper>
-                                <h3 className="text-center">Student Financial Aid & Awards</h3>
+                                <h3 className="text-center">Counselling & Student Development</h3>
                             </MiniWrapper>
                         </Col>
                     </Row>
@@ -30,10 +30,10 @@ class Bookstore extends React.Component{
                         <Col xsOffset={1} xs={4}>
                             <MiniWrapper>
                                 <figure>
-                                    <img src="images/Financial Aid.png" class="img-responsive"/>
-                                    <figcaption className="text-center">Student Financial Aid and Awards can help you discover sources
-                                        of funding, apply for financial aid and awards, avoid and solve
-                                        problems with student loans and more.</figcaption>
+                                    <img src="images/Counselling.png" class="img-responsive"/>
+                                    <figcaption className="text-center">Counselling is available to all full and part-time students. They are
+                                        here to help manage stress, sort through personal concerns and
+                                        enhance your educational performance.</figcaption>
                                 </figure>
                             </MiniWrapper>
                         </Col>
@@ -41,20 +41,25 @@ class Bookstore extends React.Component{
                             <MiniWrapper>
                                 <Row>
                                     <Col xs={12}>
-                                        <h5 className="text-center">BCIT Student Financial Aid & Rewards are available in all campuses</h5>
+                                        <h5 className="text-center">BCIT Counselling & Student Awards are available in all campuses</h5>
                                         <ul className="operations">
                                             <li><b>Location:</b></li>
                                             <li>Annacis Island Campus: #2603</li>
                                             <li>Aerospace Technology Campus: #287</li>
-                                            <li>Burnaby Campus: SW1 #2132</li>
+                                            <li>Burnaby Campus: SE16 #128</li>
+                                            <li>Downtown Campus: 2nd floor</li>
                                             <li><b>Operation Hours:</b></li>
-                                            <li><i>Monday-Friday:</i>  8:30 a.m. to 4:00 p.m</li>
-                                            <li><i>Saturday - Sunday:</i> CLOSED </li>
+                                            <li>September - May:</li>
+                                            <li><i>Monday, Tuesday, Wednesday, and Friday :</i></li>
+                                            <li>8:30 am. to 4:30 pm</li>
+                                            <li><i>Thursday:</i> 9:00 am - 4:30 pm</li>
+                                            <li>June - August:</li>
+                                            <li><i>Monday, Tuesday, Wednesday, and Friday :</i></li>
+                                            <li>8:30 am. to 4:00 pm</li>
+                                            <li><i>Thursday:</i> 9:00 am - 4:00 pm</li>
                                             <li><b>Contact:</b></li>
-                                            <li>Phone: 604-432-8555</li>
-                                            <li>Email:</li>
-                                            <li>For question about Awards, Scholarships and Bursaries: <i>sawards@bcit.ca</i></li>
-                                            <li>For any other Financial Aid questions: <i>finaid@bcit.ca</i></li>
+                                            <li>Appointment Phone: 604-432-8608</li>
+                                            <li>Fax: 604-431-7261</li>
                                         </ul>
                                     </Col>
                                 </Row>

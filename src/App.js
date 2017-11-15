@@ -15,6 +15,10 @@ import Bookstore from './information_pages/Bookstore'
 import Ejobs from './information_pages/Ejobs'
 import Recreation from './information_pages/Recreation'
 import StudentFinancialAid from './information_pages/StudentFinancialAid'
+import Counselling from './information_pages/Counselling'
+import HarassmentAndDiscrimination from './information_pages/HarassmentAndDiscrimination'
+import ContemplationRoom from './information_pages/ContemplationRoom'
+
 
 class App extends React.Component{
   render() {
@@ -28,6 +32,9 @@ class App extends React.Component{
                   <Route exact path = '/Ejobs' component={Ejobs}/>
                   <Route exact path = '/Recreation' component={Recreation}/>
                   <Route exact path = '/StudentFinancialAid' component={StudentFinancialAid}/>
+                  <Route exact path = '/Counselling' component={Counselling}/>
+                  <Route exact path = '/HarassmentAndDiscrimination' component={HarassmentAndDiscrimination}/>
+                  <Route exact path = '/ContemplationRoom' component={ContemplationRoom}/>
               </Switch>
             </div>
           </BrowserRouter>

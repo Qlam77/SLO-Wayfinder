@@ -5,6 +5,9 @@ import BookstoreIcon from './images/bookstore.jpg';
 import EjobsIcon from './images/eJobs.jpg';
 import RecreationIcon from './images/recreation.jpg';
 import StudentFinancialAidIcon from './images/financial aid.jpg';
+import CounsellingIcon from './images/counselling.jpg';
+import HarassmentAndDiscriminationIcon from './images/harassment and discrimination office.jpg';
+import ContemplationRoomIcon from './images/health.jpg';
 import {Link} from 'react-router-dom';
 import MenuLinker from './MenuLinker'
 import LinkDescription from './LinkDescription'
@@ -28,7 +31,7 @@ class tabElement extends React.Component {
                             <MenuItem header>
                                 <Row>
                                     <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Bookstore</MenuLinker>
                                     </Col>
                                     <Col xs={6}>
                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
@@ -51,7 +54,7 @@ class tabElement extends React.Component {
                             <MenuItem header>
                                 <Row>
                                     <Col xs={6}>
-                                        <MenuLinker path="/Ejobs" src={EjobsIcon} name="Ejobs">Find a job</MenuLinker>
+                                        <MenuLinker path="/Ejobs" src={EjobsIcon} name="Ejobs">Ejobs</MenuLinker>
                                     </Col>
                                     <Col xs={6}>
                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
@@ -72,7 +75,7 @@ class tabElement extends React.Component {
                             <MenuItem header>
                                 <Row>
                                     <Col xs={6}>
-                                        <MenuLinker path="/Recreation" src={RecreationIcon} name="Recreation">Maintain a good health</MenuLinker>
+                                        <MenuLinker path="/Recreation" src={RecreationIcon} name="Recreation">Recreation Services</MenuLinker>
                                     </Col>
                                     <Col xs={6}>
                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
@@ -94,7 +97,7 @@ class tabElement extends React.Component {
                             <MenuItem header>
                                 <Row>
                                     <Col xs={6}>
-                                        <MenuLinker path="/StudentFinancialAid" src={StudentFinancialAidIcon} name="StudentFinancialAid">Keep track of your financial</MenuLinker>
+                                        <MenuLinker path="/StudentFinancialAid" src={StudentFinancialAidIcon} name="StudentFinancialAid">Student Financial & Awards</MenuLinker>
                                     </Col>
                                     <Col xs={6}>
                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
@@ -116,7 +119,14 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider/>
                             <MenuItem header>
-                            <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                                <Row>
+                                    <Col xs={6}>
+                                        <MenuLinker path="/Counselling" src={CounsellingIcon} name="Counselling">Counselling & Student Development</MenuLinker>
+                                    </Col>
+                                    <Col xs={6}>
+                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                    </Col>
+                                </Row>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -129,7 +139,14 @@ class tabElement extends React.Component {
                              </LinkDescription>
                              <MenuItem divider/>
                              <MenuItem header>
-                             <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                                 <Row>
+                                     <Col xs={6}>
+                                         <MenuLinker path="/HarassmentAndDiscrimination" src={HarassmentAndDiscriminationIcon} name="Counselling">Harassment & Discrimination</MenuLinker>
+                                     </Col>
+                                     <Col xs={6}>
+                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
+                                     </Col>
+                                 </Row>
                              </MenuItem>
                          </DropdownButton>
                     </Col>
@@ -142,7 +159,7 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                            <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                            <MenuLinker path="/ContemplationRoom" src={ContemplationRoomIcon} name="ContemplationRoom">SA Contemplation Room</MenuLinker>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
