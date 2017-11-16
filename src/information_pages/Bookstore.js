@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Accordion, Panel} from 'react-bootstrap';
 import ContentWrapper from "../components/ContentWrapper";
 import DesktopHeader from "../components/DesktopHeader";
 import MenuLinker from "../components/MenuLinker";
@@ -40,10 +40,9 @@ class Bookstore extends React.Component{
                         </Col>
                         <Col xsOffset={1} xs={5}>
                             <MiniWrapper>
-                                <Row>
-                                    <Col xs={6}>
-                                        <ul className="operations">
-                                            For Burnaby BookStore:
+                                <Accordion>
+                                    <Panel header="Burnaby" eventKey="1">
+                                        <ul className="darkText">
                                             <li><b>Location:</b></li>
                                             <li>Building SE2 (north side, ground level)</li>
                                             <li><b>Operation Hours:</b></li>
@@ -53,10 +52,9 @@ class Bookstore extends React.Component{
                                             <li>Phone: 604-432-8379</li>
                                             <li>Email: <i>bookstore@bcit.ca</i></li>
                                         </ul>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <ul>
-                                            For Downtown BookStore
+                                    </Panel>
+                                    <Panel header="Downtown" eventKey="2">
+                                        <ul className="darkText">
                                             <li><b>Location:</b></li>
                                             <li>2nd floor</li>
                                             <li><b>Operation Hours:</b></li>
@@ -66,8 +64,8 @@ class Bookstore extends React.Component{
                                             <li>Phone: 604-412-7799</li>
                                             <li>Email: <i>bookstore@bcit.ca</i></li>
                                         </ul>
-                                    </Col>
-                                </Row>
+                                    </Panel>
+                                </Accordion>
                             </MiniWrapper>
                             </Col>
                         </Row>
