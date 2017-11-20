@@ -186,3 +186,11 @@ html body div#root div div div ul.tabs.center div.indicator {
 .endFooter {
   float: right;
 }
+
+ul {
+  list-style: none;
+}
+
+.darkText {
+  color: black;
+}
