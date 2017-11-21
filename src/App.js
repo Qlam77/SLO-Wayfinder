@@ -11,30 +11,70 @@ import Environmental from './information_pages/Environmental';
 import Spiritual from './information_pages/Spiritual';
 import Social from './information_pages/Social';
 import MainLanding from './components/MainLanding'
+import Info from './components/Info'
 import Bookstore from './information_pages/Bookstore'
-import Ejobs from './information_pages/Ejobs'
+import eJobs from './information_pages/Ejobs'
 import Recreation from './information_pages/Recreation'
 import StudentFinancialAid from './information_pages/StudentFinancialAid'
 import Counselling from './information_pages/Counselling'
 import HarassmentAndDiscrimination from './information_pages/HarassmentAndDiscrimination'
 import ContemplationRoom from './information_pages/ContemplationRoom'
-
+import firebase from 'firebase';
 
 class App extends React.Component{
-  render() {
+    constructor(props) {
+        super(props);
+        const config = {
+            apiKey: "AIzaSyAnUDSCX5OJbc_Fh-lPETezA5y9l27k0-4",
+            authDomain: "slo-wayfinding.firebaseapp.com",
+            databaseURL: "https://slo-wayfinding.firebaseio.com",
+            projectId: "slo-wayfinding",
+            storageBucket: "slo-wayfinding.appspot.com",
+            messagingSenderId: "497318243125"
+        };
+        firebase.initializeApp(config);
+        this.state = {
+            listOfLocations: []
+        }
+    };
+
+    componentDidMount() {
+        const previousList = this.state.listOfLocations;
+        const rootRef = firebase.database().ref().child("0");
+        const childRef = rootRef.child("Services");
+        childRef.on('child_added', snap => {
+            previousList.push({
+                serviceWebName: snap.key.replace(/\s/g,''),
+                serviceName: snap.key
+            });
+            this.setState({
+                listOfLocations: previousList
+            });
+        });
+    }
+
+    render() {
+        // Populates Switch with Appropriate Links. Need words to have no space though
+        const listOfLocations = this.state.listOfLocations.map(position =>
+            <Route key={position.serviceWebName} exact path={"/" + position.serviceWebName} render={props => (
+                <Info {...props} information={position.serviceName} db={firebase}/>
+            )}/>
+        );
     return (
         <div >
           <BrowserRouter>
             <div>
               <Switch>
                   <Route exact path = '/' component={MainLanding}/>
-                  <Route exact path = '/Bookstore' component={Bookstore}/>
-                  <Route exact path = '/Ejobs' component={Ejobs}/>
-                  <Route exact path = '/Recreation' component={Recreation}/>
-                  <Route exact path = '/StudentFinancialAid' component={StudentFinancialAid}/>
-                  <Route exact path = '/Counselling' component={Counselling}/>
-                  <Route exact path = '/HarassmentAndDiscrimination' component={HarassmentAndDiscrimination}/>
-                  <Route exact path = '/ContemplationRoom' component={ContemplationRoom}/>
+                  {/*<Route exact path = '/Bookstore' component={Bookstore}/>*/}
+                  {/*/!*<Route exact path = '/Ejobs' component={Ejobs}/>*!/*/}
+                  {/*/!*<Route exact path = '/Recreation' component={Recreation}/>*!/*/}
+                  {/*/!*<Route exact path = '/StudentFinancialAid' component={StudentFinancialAid}/>*!/*/}
+                  {/*/!*<Route exact path = '/Counselling' component={Counselling}/>*!/*/}
+                  {/*/!*<Route exact path = '/HarassmentAndDiscrimination' component={HarassmentAndDiscrimination}/>*!/*/}
+                  {/*/!*<Route exact path = '/ContemplationRoom' component={ContemplationRoom}/>*!/*/}
+                  {/*<Route exact path = '/Info' component={Info}/>*/}
+                  {listOfLocations}
               </Switch>
             </div>
           </BrowserRouter>
@@ -55,7 +95,6 @@ class App extends React.Component{
                 {/*</div>*/}
               {/*</BrowserRouter>*/}
             {/*</div>*/}
-
         </div>
     );
   }

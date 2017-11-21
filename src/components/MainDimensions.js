@@ -31,7 +31,7 @@ class tabElement extends React.Component {
                             <MenuItem header>
                                 <Row>
                                     <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Bookstore</MenuLinker>
+                                        <MenuLinker path="/BookStore" src={BookstoreIcon} name="Bookstore">Test</MenuLinker>
                                     </Col>
                                     <Col xs={6}>
                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>

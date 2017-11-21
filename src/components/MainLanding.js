@@ -2,7 +2,7 @@ import React from 'react';
 import DesktopHeader from './DesktopHeader'
 import $ from 'jquery';
 import BookstoreIcon from './images/bookstore.jpg';
-import TabElement from './tabElement';
+import TabElement from './MainDimensions';
 import ContentWrapper from './ContentWrapper';
 import MiniWrapper from './MiniContentWrapper';
 import {Row, Col} from 'react-bootstrap';
