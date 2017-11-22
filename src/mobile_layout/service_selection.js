@@ -4,39 +4,42 @@ import {Row, Col, Input} from 'react-materialize';
 import Section from './section';
 import Service from './service';
 import MobileHeader from './mobile_header';
+import firebase from 'firebase'
+import DimensionImg from './dimensionImg'
+import RelatedLinks from './mobile_related_links'
 
 class ServiceSelector extends React.Component {
   render() {
     return(
       <div>
         <MobileHeader/>
-        <ServiceContainer src="images/intellectual.jpg" name="Intellectual"/>
+        <ServiceContainer db={this.props.db} service={this.props.service} />
       </div>
     );
   }
 };
 
 class ServiceContainer extends React.Component {
-  render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            dimensionList: []
+        }
+    };
+
+
+    render() {
     const containerStyle = {
       backgroundColor: "#aaaaaa",
       padding: 50
     }
     return (
       <div style={containerStyle} className="center">
-        <Row >
-          <Section src="images/intellectual.jpg" name="Intellectual" col={12}/>
+        <Row>
+            <DimensionImg db={this.props.db} service={this.props.service}/>
         </Row>
         <Row>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
-          <Service src="images/intellectual.jpg" name="Intellectual" col={4}/>
+            <RelatedLinks db={this.props.db} service={this.props.service}/>
         </Row>
       </div>
     );

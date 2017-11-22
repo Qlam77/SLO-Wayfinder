@@ -1,18 +1,18 @@
 import React from 'react'
 import App from '../App.js'
-import MobileLanding from "../mobile_layout/landing_page";
+import MobileApp from "../MobileApp";
 
 class MobileDesktopSwitch extends React.Component {
     render() {
-        const isMobile = true;
+        const isMobile = false;
         if(isMobile) {
             return(
                 <App/>
             );
         } else {
-            // return(
-            //     <MobileLanding/>
-            // );
+            return(
+                <MobileApp/>
+            );
         }
     }
 }
