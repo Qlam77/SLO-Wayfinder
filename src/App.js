@@ -2,6 +2,9 @@ import {Route, Switch} from 'react-router';
 import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import {Row, Col} from 'react-materialize'
+import MobileLanding from './mobile_layout/landing_page';
+import ServiceSelector from './mobile_layout/service_selection';
+import ServiceInfo from './mobile_layout/service_info';
 import Intellectual from './information_pages/Intellectual';
 import Occupational from './information_pages/Occupational';
 import Physical from './information_pages/Physical';
@@ -117,7 +120,7 @@ class Header extends React.Component {
 class Service extends React.Component {
   render() {
     return (
-      <Col l={4} offset={this.props.offset}>
+      <Col s={4} offset={this.props.offset}>
         <Link to={this.props.name}>
           <Figure src={this.props.src} alt={this.props.name}/>
         </Link>
@@ -129,9 +132,9 @@ class Service extends React.Component {
 class Figure extends React.Component {
   render() {
     const figureStyle = {
-      height: 120,
-      width: 120,
-      margin: 20,
+      height: "100%",
+      width: "100%",
+      margin: "auto",
       WebkitFilter: "drop-shadow(0px 0px 5px #666)"
     };
     return(
