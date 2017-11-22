@@ -5,23 +5,8 @@ import {Row, Col} from 'react-materialize'
 import MobileLanding from './mobile_layout/landing_page';
 import ServiceSelector from './mobile_layout/service_selection';
 import ServiceInfo from './mobile_layout/service_info';
-import Intellectual from './information_pages/Intellectual';
-import Occupational from './information_pages/Occupational';
-import Physical from './information_pages/Physical';
-import Financial from './information_pages/Financial';
-import Psychological from './information_pages/Psychological';
-import Environmental from './information_pages/Environmental';
-import Spiritual from './information_pages/Spiritual';
-import Social from './information_pages/Social';
 import MainLanding from './components/MainLanding'
 import Info from './components/Info'
-import Bookstore from './information_pages/Bookstore'
-import eJobs from './information_pages/Ejobs'
-import Recreation from './information_pages/Recreation'
-import StudentFinancialAid from './information_pages/StudentFinancialAid'
-import Counselling from './information_pages/Counselling'
-import HarassmentAndDiscrimination from './information_pages/HarassmentAndDiscrimination'
-import ContemplationRoom from './information_pages/ContemplationRoom'
 import firebase from 'firebase';
 
 class App extends React.Component{
