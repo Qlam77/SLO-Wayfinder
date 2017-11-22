@@ -158,7 +158,6 @@ html body div#root div div div ul.tabs.center div.indicator {
   padding-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 5%;
   padding-bottom: 2%;
   background-color: yellow;
   -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
@@ -193,4 +192,17 @@ ul {
 
 .darkText {
   color: black;
+}
+
+.panel-heading {
+  padding: 0;
+}
+
+.panel-heading a {
+  display: block;
+  padding: 1vw;
+}
+
+.panel-heading a:hover{
+  text-decoration: none;
 }
