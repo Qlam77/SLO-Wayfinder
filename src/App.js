@@ -32,7 +32,7 @@ class App extends React.Component{
         const childRef = rootRef.child("Services");
         childRef.on('child_added', snap => {
             previousList.push({
-                serviceWebName: snap.key.replace(/\s/g,''),
+                serviceWebName: snap.val().Name.replace(/\s/g,''),
                 serviceName: snap.key
             });
             this.setState({
