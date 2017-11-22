@@ -5,10 +5,10 @@ class MiniLinkDescription extends React.Component {
     render() {
         return(
             <div>
-                <b>{this.props.title}</b>
+                <b className="contentSubHeader">{this.props.title}</b>
                 <br/>
-                <div className="testWrap">
-                    {this.props.children}
+                <div className="contentPar">
+                    <p>{this.props.children}</p>
                 </div>
             </div>
         );

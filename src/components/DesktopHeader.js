@@ -1,9 +1,11 @@
 import React from 'react';
-import {Parallax} from 'react-parallax';
+
 class DesktopHeader extends React.Component {
     render() {
         return (
-          <Parallax bgImage=""></Parallax>
+            <div className="backgroundHeader">
+                <img className="iconHeader" src="images/bcit_cmyk_large.jpg" alt="bcit"/>
+            </div>
         );
     }
 }
