@@ -8,7 +8,7 @@ class ContentImage extends React.Component {
             <Col xsOffset={1} xs={4}>
                 <MiniWrapper>
                     <figure>
-                        <img src={this.props.image} class="img-responsive"/>
+                        <img src={this.props.image} className="img-responsive"/>
                         <figcaption className="text-center">
                             {this.props.children}
                         </figcaption>

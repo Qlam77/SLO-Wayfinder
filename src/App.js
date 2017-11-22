@@ -40,7 +40,7 @@ class App extends React.Component{
 
     componentDidMount() {
         const previousList = this.state.listOfLocations;
-        const rootRef = firebase.database().ref().child("0");
+        const rootRef = firebase.database().ref().child("1");
         const childRef = rootRef.child("Services");
         childRef.on('child_added', snap => {
             previousList.push({

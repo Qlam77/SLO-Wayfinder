@@ -22,14 +22,16 @@ class Info extends React.Component {
 
     componentDidMount() {
         const previousList = this.state.linkDescription;
-        const rootRef = this.props.db.database().ref().child("0");
+        const rootRef = this.props.db.database().ref().child("1");
         const subRef = rootRef.child("Services");
         const childRef = subRef.child(this.props.information);
         childRef.once('value', snap => {
             previousList.push({
                 serviceName: snap.key,
                 name: snap.val().Name,
-                desc: snap.val().Desc
+                desc: snap.val().Desc,
+                link: snap.val().Link,
+                img: snap.val().img,
             });
 
             this.setState({
@@ -49,7 +51,7 @@ class Info extends React.Component {
 
                     {/*Fill the left panel with an image and description*/}
                     <Row>
-                        <ContentImage image="images/bookstore2.jpg">
+                        <ContentImage image={position.img}>
                             {position.desc}
                         </ContentImage>
 
