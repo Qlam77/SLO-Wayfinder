@@ -4,7 +4,7 @@ import MobileApp from "../MobileApp";
 
 class MobileDesktopSwitch extends React.Component {
     render() {
-        const isMobile = false;
+        const isMobile = true;
         if(isMobile) {
             return(
                 <App/>
