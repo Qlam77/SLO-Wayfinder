@@ -1,4 +1,4 @@
-import {Route, Switch} from 'react-router';
+import {Route, Switch, Redirect} from 'react-router';
 import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import {Row, Col} from 'react-materialize'
@@ -7,29 +7,39 @@ import ServiceSelector from './mobile_layout/service_selection';
 import ServiceInfo from './mobile_layout/service_info';
 import MainLanding from './components/MainLanding'
 import Info from './components/Info'
-import firebase from 'firebase';
+// import firebase from 'firebase';
 
 class App extends React.Component{
     constructor(props) {
         super(props);
-        const config = {
-            apiKey: "AIzaSyAnUDSCX5OJbc_Fh-lPETezA5y9l27k0-4",
-            authDomain: "slo-wayfinding.firebaseapp.com",
-            databaseURL: "https://slo-wayfinding.firebaseio.com",
-            projectId: "slo-wayfinding",
-            storageBucket: "slo-wayfinding.appspot.com",
-            messagingSenderId: "497318243125"
-        };
-        firebase.initializeApp(config);
         this.state = {
-            listOfLocations: []
+            listOfLocations: [],
+            categoryList: []
         }
     };
 
     componentDidMount() {
         const previousList = this.state.listOfLocations;
-        const rootRef = firebase.database().ref().child("1");
+        const dimensionList = this.state.categoryList;
+        const rootRef = this.props.db.database().ref().child("1");
         const childRef = rootRef.child("Services");
+
+        const rootRef2 = this.props.db.database().ref().child("0");
+        //look for element called dimensions
+        const childRef2 = rootRef2.child("Dimensions");
+        //get all current values at the current location
+        childRef2.once('value', snap1 => {
+            //iterate over each of these elements
+            snap1.forEach((childSnapshot1) => {
+                //add each element to the local array
+                // childRef.child(childSnapshot.key)
+                dimensionList.push({
+                    dimensionName: childSnapshot1.key,
+                });
+            });
+        });
+
+
         childRef.on('child_added', snap => {
             previousList.push({
                 serviceWebName: snap.val().Name.replace(/\s/g,''),
@@ -45,44 +55,25 @@ class App extends React.Component{
         // Populates Switch with Appropriate Links. Need words to have no space though
         const listOfLocations = this.state.listOfLocations.map(position =>
             <Route key={position.serviceWebName} exact path={"/" + position.serviceWebName} render={props => (
-                <Info {...props} information={position.serviceName} db={firebase}/>
+                <Info {...props} information={position.serviceName} db={this.props.db}/>
             )}/>
         );
-    return (
+
+        const serviceSelection = this.state.categoryList.map((position, index) =>
+            <Route key={index} exact path={"/" + position.dimensionName} render={()=><Redirect push to="/"/>}/>
+        );
+
+        return (
         <div >
           <BrowserRouter>
             <div>
               <Switch>
                   <Route exact path = '/' component={MainLanding}/>
-                  {/*<Route exact path = '/Bookstore' component={Bookstore}/>*/}
-                  {/*/!*<Route exact path = '/Ejobs' component={Ejobs}/>*!/*/}
-                  {/*/!*<Route exact path = '/Recreation' component={Recreation}/>*!/*/}
-                  {/*/!*<Route exact path = '/StudentFinancialAid' component={StudentFinancialAid}/>*!/*/}
-                  {/*/!*<Route exact path = '/Counselling' component={Counselling}/>*!/*/}
-                  {/*/!*<Route exact path = '/HarassmentAndDiscrimination' component={HarassmentAndDiscrimination}/>*!/*/}
-                  {/*/!*<Route exact path = '/ContemplationRoom' component={ContemplationRoom}/>*!/*/}
-                  {/*<Route exact path = '/Info' component={Info}/>*/}
+                  {serviceSelection}
                   {listOfLocations}
               </Switch>
             </div>
           </BrowserRouter>
-            {/*<div>*/}
-              {/*<BrowserRouter>*/}
-                {/*<div>*/}
-                {/*<Switch>*/}
-                  {/*<Route exact path = '/' component={Landing}/>*/}
-                  {/*<Route exact path = '/Intellectual' component={Intellectual}/>*/}
-                  {/*<Route exact path = '/Occupational' component={Occupational}/>*/}
-                  {/*<Route exact path = '/Physical' component={Physical}/>*/}
-                  {/*<Route exact path = '/Financial' component={Financial}/>*/}
-                  {/*<Route exact path = '/Psychological' component={Psychological}/>*/}
-                  {/*<Route exact path = '/Environmental' component={Environmental}/>*/}
-                  {/*<Route exact path = '/Spiritual' component={Spiritual}/>*/}
-                  {/*<Route exact path = '/Social' component={Social}/>*/}
-                  {/*</Switch>*/}
-                {/*</div>*/}
-              {/*</BrowserRouter>*/}
-            {/*</div>*/}
         </div>
     );
   }

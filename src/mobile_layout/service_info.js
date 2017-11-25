@@ -3,13 +3,22 @@ import React from 'react';
 import {Row, Col, Input, Accordion, Panel} from 'react-bootstrap';
 import Service from './service';
 import MobileHeader from './mobile_header';
+import MobileRelatedLinks from "./mobile_related_links";
+import Section from "./imgSection";
 
 class ServiceInfo extends React.Component {
   render() {
     return(
       <div>
         <MobileHeader/>
-        <ServiceContainer db={this.props.db} service={this.props.service} name={this.props.name}/>
+        <ServiceContainer db={this.props.db} dimension={this.props.dimension} title={this.props.title}/>
+          Related Links:
+        <MobileRelatedLinks db={this.props.db} service={this.props.dimension}/>
+          <Row>
+            <Col xs={12}>
+                <Link to="/">Back to home</Link>
+            </Col>
+          </Row>
       </div>
     );
   }
@@ -28,7 +37,7 @@ class ServiceContainer extends React.Component {
         const previousList = this.state.linkDescription;
         const rootRef = this.props.db.database().ref().child("1");
         const subRef = rootRef.child("Services");
-        const childRef = subRef.child(this.props.name);
+        const childRef = subRef.child(this.props.title);
         childRef.once('value', snap => {
             previousList.push({
                 serviceName: snap.key,
@@ -48,8 +57,8 @@ class ServiceContainer extends React.Component {
   render() {
     const containerStyle = {
       backgroundColor: "#aaaaaa",
-      padding: 100,
-      paddingTop: 10
+      // padding: 100,
+      // paddingTop: 10
     }
 
     const linkDescription = this.state.linkDescription.map((position, index) =>
@@ -59,15 +68,20 @@ class ServiceContainer extends React.Component {
       );
       return (
       <div style={containerStyle} className="center">
-        <Row>
-          <Service src={this.state.imgItem} linkLocation={"/" + this.props.service} col={12}/>
-        </Row>
-        <Row>
-            {linkDescription}
-        </Row>
-        <Row>
-          <InfoContainer db={this.props.db} information={this.props.name}/>
-        </Row>
+          <div className="contStyle">
+              <Row>
+                  {this.props.title}
+              </Row>
+            <Row>
+              <Section src={this.state.imgItem} col={12}/>
+            </Row>
+            <Row>
+                {linkDescription}
+            </Row>
+            <Row>
+              <InfoContainer db={this.props.db} title={this.props.title}/>
+            </Row>
+          </div>
       </div>
     );
   }
@@ -85,7 +99,7 @@ class InfoContainer extends React.Component {
         const previousList = this.state.locationList;
         const rootRef = this.props.db.database().ref().child("1");
         const subRef = rootRef.child("Services");
-        const childRef = subRef.child(this.props.information);
+        const childRef = subRef.child(this.props.title);
         const locRef = childRef.child("Locations");
         locRef.once('value', snap => {
             snap.forEach((childSnapshot) => {
@@ -103,12 +117,23 @@ class InfoContainer extends React.Component {
         });
     }
   render() {
-    const contStyle = {
-      backgroundColor: "#ffffff",
-      borderRadius: 5,
-      margin: 10,
-      padding: "10px 10px"
-    }
+      const singleLocationList = this.state.locationList.map((position, index) =>
+          <Accordion defaultActiveKey="1">
+              <Panel key={index} header={position.locationName} eventKey="1">
+                  <ul>
+                      <li><b>Location:</b></li>
+                      <li>{position.location}</li>
+                      <li><b>Operation Hours:</b></li>
+                      <li><i>{position.hours}</i></li>
+                      <li><b>Contact:</b></li>
+                      <li>Phone:</li>
+                      <li>{position.contact}</li>
+                      <li>Email:</li>
+                      <li>{position.email}</li>
+                  </ul>
+              </Panel>
+          </Accordion>
+      );
       const locationList = this.state.locationList.map((position, index) =>
           <Panel key={index} header={position.locationName} eventKey={index}>
               <ul>
@@ -124,13 +149,19 @@ class InfoContainer extends React.Component {
               </ul>
           </Panel>
       );
-    return(
-      <div style={contStyle}>
-        <Accordion>
-            {locationList}
-        </Accordion>
-      </div>
-    );
+      if (this.state.locationList.length == 1) {
+        return (
+            <div>
+                {singleLocationList}
+            </div>
+        );
+      } else {
+          return (
+              <Accordion>
+                  {locationList}
+              </Accordion>
+          );
+      }
   }
 };
 

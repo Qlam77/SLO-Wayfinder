@@ -10,16 +10,6 @@ class MobileApp extends React.Component {
     //initialize props
     constructor(props) {
         super(props);
-        //initialize firebase
-        const config = {
-            apiKey: "AIzaSyAnUDSCX5OJbc_Fh-lPETezA5y9l27k0-4",
-            authDomain: "slo-wayfinding.firebaseapp.com",
-            databaseURL: "https://slo-wayfinding.firebaseio.com",
-            projectId: "slo-wayfinding",
-            storageBucket: "slo-wayfinding.appspot.com",
-            messagingSenderId: "497318243125"
-        };
-        firebase.initializeApp(config);
         this.state = {
             //make a variable that stores all the links
             initialDimensions: []
@@ -31,7 +21,7 @@ class MobileApp extends React.Component {
         //save current array into a local variable
         const previousList = this.state.initialDimensions;
         //target parent from database
-        const rootRef = firebase.database().ref().child("0");
+        const rootRef = this.props.db.database().ref().child("0");
         //look for element called dimensions
         const childRef = rootRef.child("Dimensions");
         //get all current values at the current location
@@ -47,12 +37,12 @@ class MobileApp extends React.Component {
                 });
             });
         });
-        const rootRef2 = firebase.database().ref().child("1");
+        const rootRef2 = this.props.db.database().ref().child("1");
         const childRef2 = rootRef2.child("Services");
         childRef2.once('value', snap1 => {
             snap1.forEach((childSnapshot1) => {
                 previousList.push({
-                    subServiceName: childSnapshot1.val().Name.replace(/\s/g,''),
+                    linkLocation: childSnapshot1.val().Name.replace(/\s/g,''),
                     name: childSnapshot1.val().Name,
                     category: childSnapshot1.val().Category
                 });
@@ -67,13 +57,13 @@ class MobileApp extends React.Component {
         //for each item in the array, make elements
         const serviceSelection = this.state.initialDimensions.map((position, index) =>
             <Route key={index} exact path={"/" + position.serviceName} render={props => (
-                <ServiceSelection {...props} service={position.serviceName} db={firebase}/>
+                <ServiceSelection {...props} service={position.serviceName} db={this.props.db}/>
             )}/>
         );
 
         const serviceSelection2 = this.state.initialDimensions.map((position, index) =>
-            <Route key={index} exact path={"/" + position.subServiceName} render={props => (
-                <ServiceInfo {...props} service={position.category} db={firebase} name={position.name}/>
+            <Route key={index} exact path={"/" + position.linkLocation} render={props => (
+                <ServiceInfo {...props} dimension={position.category} db={this.props.db} title={position.name}/>
             )}/>
         );
 
