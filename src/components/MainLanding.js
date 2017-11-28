@@ -29,7 +29,7 @@ class MainLanding extends React.Component {
                         </Col>
                     </Row>
                     <br/>
-                    <TabElement/>
+                    <TabElement db={this.props.db}/>
                 </ContentWrapper>
             </div>
         );
