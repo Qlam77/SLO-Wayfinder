@@ -5,11 +5,13 @@ import {Row, Col, Input} from 'react-bootstrap';
 import Section from './section';
 import MobileHeader from './mobile_header';
 import SearchBar from './searchbar';
+import Background from '../components/Background';
 
 class MobileLanding extends React.Component {
   render() {
     return (
       <div>
+        <Background/>
         <MobileHeader/>
         {/*<SearchBar/>*/}
         <ServiceContainer/>
@@ -20,11 +22,8 @@ class MobileLanding extends React.Component {
 
 class ServiceContainer extends React.Component {
   render() {
-    const containerStyle = {
-      backgroundColor: "#aaaaaa"
-    }
     return (
-      <Row style={containerStyle} className="center">
+      <Row className="dimensions_container">
             <Section src="images/intellectual.jpg" name="Intellectual" col={6}/>
             <Section src="images/occupational.jpg" name="Occupational" col={6}/>
             <Section src="images/physical.jpg" name="Physical" col={6}/>

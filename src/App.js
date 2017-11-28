@@ -17,9 +17,10 @@ class App extends React.Component {
         };
         firebase.initializeApp(config);
         this.state = {
-            width: window.innerWidth,
-        };
-    }
+            listOfLocations: [],
+            categoryList: []
+        }
+    };
 
     componentWillMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);

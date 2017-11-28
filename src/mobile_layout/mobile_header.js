@@ -6,22 +6,8 @@ class MobileHeader extends React.Component {
   render() {
     return (
       <Col s={12}>
-        <HeaderBackground background="images/student_life.png"/>
-      </Col>
-    );
-  }
-};
-
-class HeaderBackground extends React.Component {
-  render() {
-    const backgroundStyle = {
-      backgroundImage: "url(images/student_life.png)",
-      height: 200
-    }
-    return (
-      <div style={backgroundStyle}>
         <Logo/>
-      </div>
+      </Col>
     );
   }
 };
@@ -37,7 +23,7 @@ class Logo extends React.Component {
       textAlign: "center"
     }
     return (
-      <img style={logoStyle} src="images/bcit_cmyk_large.jpg" alt="bcitLogo"/>
+      <img style={logoStyle} src="https://firebasestorage.googleapis.com/v0/b/slo-wayfinding.appspot.com/o/Other%2FbcitLogo.png?alt=media&token=a11790ae-c357-4667-a5e1-379d09b2dbd2" alt="bcitLogo"/>
     );
   }
 };

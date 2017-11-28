@@ -7,11 +7,13 @@ import MobileHeader from './mobile_header';
 import firebase from 'firebase'
 import DimensionImg from './dimensionImg'
 import RelatedLinks from './mobile_related_links'
+import Background from '../components/Background';
 
 class ServiceSelector extends React.Component {
   render() {
     return(
       <div>
+        <Background/>
         <MobileHeader/>
         <ServiceContainer db={this.props.db} service={this.props.service} />
       </div>
