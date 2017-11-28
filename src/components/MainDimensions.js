@@ -13,9 +13,11 @@ import MenuLinker from './MenuLinker'
 import LinkDescription from './LinkDescription'
 import Description from './MiniLinkDescription'
 import DesktopHeader from "./DesktopHeader";
+import MainLandingLinks from "./MainLandingLinks";
 
 class tabElement extends React.Component {
     render() {
+
         return (
             <ButtonToolbar>
                 <Row>
@@ -29,14 +31,7 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider/>
                             <MenuItem header>
-                                <Row>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/BookStore" src={BookstoreIcon} name="Bookstore">Test</MenuLinker>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
-                                    </Col>
-                                </Row>
+                                <MainLandingLinks db={this.props.db} information="Intellectual"/>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -52,14 +47,7 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider/>
                             <MenuItem header>
-                                <Row>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Ejobs" src={EjobsIcon} name="Ejobs">Ejobs</MenuLinker>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
-                                    </Col>
-                                </Row>
+                                <MainLandingLinks db={this.props.db} information="Occupational"/>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -73,14 +61,7 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                                <Row>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Recreation" src={RecreationIcon} name="Recreation">Recreation Services</MenuLinker>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
-                                    </Col>
-                                </Row>
+                                <MainLandingLinks db={this.props.db} information="Physical"/>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -95,14 +76,7 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                                <Row>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/StudentFinancialAid" src={StudentFinancialAidIcon} name="StudentFinancialAid">Student Financial & Awards</MenuLinker>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
-                                    </Col>
-                                </Row>
+                                <MainLandingLinks db={this.props.db} information="Financial"/>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -120,12 +94,7 @@ class tabElement extends React.Component {
                             <MenuItem divider/>
                             <MenuItem header>
                                 <Row>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Counselling" src={CounsellingIcon} name="Counselling">Counselling & Student Development</MenuLinker>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
-                                    </Col>
+                                    <MainLandingLinks db={this.props.db} information="Psychological"/>
                                 </Row>
                             </MenuItem>
                         </DropdownButton>
@@ -140,12 +109,7 @@ class tabElement extends React.Component {
                              <MenuItem divider/>
                              <MenuItem header>
                                  <Row>
-                                     <Col xs={6}>
-                                         <MenuLinker path="/HarassmentAndDiscrimination" src={HarassmentAndDiscriminationIcon} name="Counselling">Harassment & Discrimination</MenuLinker>
-                                     </Col>
-                                     <Col xs={6}>
-                                         <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">Buy Books</MenuLinker>
-                                     </Col>
+                                     <MainLandingLinks db={this.props.db} information="Environmental"/>
                                  </Row>
                              </MenuItem>
                          </DropdownButton>
@@ -159,7 +123,9 @@ class tabElement extends React.Component {
                             </LinkDescription>
                             <MenuItem divider />
                             <MenuItem header>
-                            <MenuLinker path="/ContemplationRoom" src={ContemplationRoomIcon} name="ContemplationRoom">SA Contemplation Room</MenuLinker>
+                                <Row>
+                                    <MainLandingLinks db={this.props.db} information="Spiritual"/>
+                                </Row>
                             </MenuItem>
                         </DropdownButton>
                     </Col>
@@ -172,7 +138,9 @@ class tabElement extends React.Component {
                         </LinkDescription>
                         <MenuItem divider />
                         <MenuItem header>
-                        <MenuLinker path="/Bookstore" src={BookstoreIcon} name="Bookstore">You can buy your books here</MenuLinker>
+                            <Row>
+                                <MainLandingLinks db={this.props.db} information="Social"/>
+                            </Row>
                         </MenuItem>
                         </DropdownButton>
                     </Col>
