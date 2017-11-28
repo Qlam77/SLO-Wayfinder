@@ -5,11 +5,13 @@ import Service from './service';
 import MobileHeader from './mobile_header';
 import MobileRelatedLinks from "./mobile_related_links";
 import Section from "./imgSection";
+import Background from '../components/Background';
 
 class ServiceInfo extends React.Component {
   render() {
     return(
       <div>
+        <Background/>
         <MobileHeader/>
         <ServiceContainer db={this.props.db} dimension={this.props.dimension} title={this.props.title}/>
           Related Links:

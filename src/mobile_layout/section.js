@@ -17,12 +17,12 @@ class Section extends React.Component {
 class Figure extends React.Component {
   render() {
     const figureStyle = {
-      height: "150px",
-      width: "150px",
+      height: "125px",
+      width: "125px",
       WebkitFilter: "drop-shadow(0px 0px 5px #666)"
     };
     return (
-      <img style={figureStyle} src={this.props.src} alt={this.props.name}/>
+      <img style={figureStyle} src={this.props.src} alt={this.props.name} className="dimension"/>
     );
   }
 };

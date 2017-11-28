@@ -55,13 +55,13 @@ class MobileApp extends React.Component {
 
     render() {
         //for each item in the array, make elements
-        const serviceSelection = this.state.initialDimensions.map((position, index) =>
+        const dimensions = this.state.initialDimensions.map((position, index) =>
             <Route key={index} exact path={"/" + position.serviceName} render={props => (
                 <ServiceSelection {...props} service={position.serviceName} db={this.props.db}/>
             )}/>
         );
 
-        const serviceSelection2 = this.state.initialDimensions.map((position, index) =>
+        const serviceSelection = this.state.initialDimensions.map((position, index) =>
             <Route key={index} exact path={"/" + position.linkLocation} render={props => (
                 <ServiceInfo {...props} dimension={position.category} db={this.props.db} title={position.name}/>
             )}/>
@@ -74,8 +74,8 @@ class MobileApp extends React.Component {
                     <Switch>
                         {/*main page will display LandingPage*/}
                         <Route exact path="/" component={LandingPage}/>
+                        {dimensions}
                         {serviceSelection}
-                        {serviceSelection2}
                     </Switch>
                 </div>
             </BrowserRouter>

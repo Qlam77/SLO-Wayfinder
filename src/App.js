@@ -23,7 +23,6 @@ class App extends React.Component{
         const dimensionList = this.state.categoryList;
         const rootRef = this.props.db.database().ref().child("1");
         const childRef = rootRef.child("Services");
-
         const rootRef2 = this.props.db.database().ref().child("0");
         //look for element called dimensions
         const childRef2 = rootRef2.child("Dimensions");
