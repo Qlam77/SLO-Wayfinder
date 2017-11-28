@@ -5,8 +5,7 @@ class LinkDescription extends React.Component {
     render() {
         return(
             <MenuItem header>
-                <h4><b>{this.props.title}</b></h4>
-                <br/>
+                <h2 className="contentHeader"><b>{this.props.title}</b></h2>
                 {this.props.children}
             </MenuItem>
         );

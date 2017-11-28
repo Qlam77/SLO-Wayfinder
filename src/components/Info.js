@@ -11,6 +11,7 @@ import MenuLinker from "../components/MenuLinker";
 import BookstoreIcon from "../components/images/bookstore.png";
 import {Link} from 'react-router-dom';
 import RelatedLinks from "./RelatedLinks";
+import Background from "./Background"
 
 class Info extends React.Component {
     constructor(props) {
@@ -75,6 +76,7 @@ class Info extends React.Component {
 
         return(
             <div>
+                <Background/>
                 <DesktopHeader/>
                 {linkDescription}
             </div>

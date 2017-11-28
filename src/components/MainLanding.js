@@ -6,15 +6,7 @@ import TabElement from './MainDimensions';
 import ContentWrapper from './ContentWrapper';
 import MiniWrapper from './MiniContentWrapper';
 import {Row, Col} from 'react-bootstrap';
-
-$(document).ready(function(){
-    $(".someContent").on("click", function() {
-        $(".someContent").fadeOut("fast", function(){});
-    });
-    $(".tab").on("click", function(){
-        $("div.active").fadeIn("fast", function(){});
-    })
-});
+import Background from './Background';
 
 class MainLanding extends React.Component {
     render() {
@@ -26,13 +18,13 @@ class MainLanding extends React.Component {
         };
         return (
             <div>
-                <div className="mainPage"/>
+                <Background/>
                 <DesktopHeader/>
                 <ContentWrapper>
                     <Row>
                         <Col xsOffset={4} xs={4}>
                             <MiniWrapper>
-                                <h4 className="text-center">8 Dimensions of wellbeing</h4>
+                                <h4 className="text-center">Dimensions of wellbeing</h4>
                             </MiniWrapper>
                         </Col>
                     </Row>
