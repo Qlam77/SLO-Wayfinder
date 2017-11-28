@@ -33,6 +33,7 @@ class Info extends React.Component {
                 desc: snap.val().Desc,
                 link: snap.val().Link,
                 img: snap.val().img,
+                category: snap.val().Category
             });
 
             this.setState({
@@ -62,7 +63,7 @@ class Info extends React.Component {
 
                     <hr/>
                     {/*Pass in db, and target for the related links for eact category*/}
-                    <RelatedLinks db={this.props.db} information={this.props.information}/>
+                    <RelatedLinks db={this.props.db} information={position.category}/>
                     <Row>
                         <Col xsOffset={9} xs={2}>
                             <div className="endFooter">

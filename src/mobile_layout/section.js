@@ -1,12 +1,12 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import {Col, Input} from 'react-materialize';
+import {Col, Input} from 'react-bootstrap';
 
 class Section extends React.Component {
   render() {
     return (
-      <Col s={this.props.col}>
-        <Link to={this.props.name}>
+      <Col xs={this.props.col}>
+        <Link exact to={this.props.name}>
           <Figure src={this.props.src} alt={this.props.name}/>
         </Link>
       </Col>
