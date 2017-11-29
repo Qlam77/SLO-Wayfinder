@@ -5,24 +5,17 @@ import {Col, Input} from 'react-bootstrap';
 class Section extends React.Component {
   render() {
     return (
-      <Col xs={this.props.col}>
         <Link exact to={this.props.name}>
           <Figure src={this.props.src} alt={this.props.name}/>
         </Link>
-      </Col>
     );
   }
 };
 
 class Figure extends React.Component {
   render() {
-    const figureStyle = {
-      height: "125px",
-      width: "125px",
-      WebkitFilter: "drop-shadow(0px 0px 5px #666)"
-    };
     return (
-      <img style={figureStyle} src={this.props.src} alt={this.props.name} className="dimension"/>
+      <img src={this.props.src} alt={this.props.name} className="mobile_dimension"/>
     );
   }
 };

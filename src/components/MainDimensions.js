@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 import MenuLinker from './MenuLinker'
 import LinkDescription from './LinkDescription'
 import Description from './MiniLinkDescription'
-import DesktopHeader from "./DesktopHeader";
+import Header from "./Header";
 import MainLandingLinks from "./MainLandingLinks";
 
 class tabElement extends React.Component {

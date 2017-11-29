@@ -2,7 +2,7 @@ import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import {Row, Col, Input, Accordion, Panel} from 'react-bootstrap';
 import Service from './service';
-import MobileHeader from './mobile_header';
+import Header from '../components/Header';
 import MobileRelatedLinks from "./mobile_related_links";
 import Section from "./imgSection";
 import Background from '../components/Background';
@@ -12,9 +12,9 @@ class ServiceInfo extends React.Component {
     return(
       <div>
         <Background/>
-        <MobileHeader/>
+        <Header size="150"/>
         <ServiceContainer db={this.props.db} dimension={this.props.dimension} title={this.props.title}/>
-          Related Links:
+        <h4>Related Links:</h4>
         <MobileRelatedLinks db={this.props.db} service={this.props.dimension}/>
           <Row>
             <Col xs={12}>
@@ -57,34 +57,22 @@ class ServiceContainer extends React.Component {
         });
     }
   render() {
-    const containerStyle = {
-      backgroundColor: "#aaaaaa",
-      // padding: 100,
-      // paddingTop: 10
-    }
-
     const linkDescription = this.state.linkDescription.map((position, index) =>
         <p>
             {position.desc}
         </p>
       );
       return (
-      <div style={containerStyle} className="center">
-          <div className="contStyle">
-              <Row>
-                  {this.props.title}
-              </Row>
+        <div className="mobile_dimensions_container">
+        <h2 class="mobile_service_header">{this.props.title}</h2>
             <Row>
-              <Section src={this.state.imgItem} col={12}/>
+              <Section src={this.state.imgItem} col={6}/>
+              <Col xs={6} class="mobile_service_desc">{linkDescription}</Col>
             </Row>
-            <Row>
-                {linkDescription}
-            </Row>
-            <Row>
+            <div class="mobile_accordion">
               <InfoContainer db={this.props.db} title={this.props.title}/>
-            </Row>
-          </div>
-      </div>
+            </div>
+        </div>
     );
   }
 }

@@ -1,0 +1,13 @@
+.service_container {
+  padding: 20px;
+}
+
+.service_image  {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  display: block;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 50%;
+}

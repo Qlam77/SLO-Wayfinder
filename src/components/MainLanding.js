@@ -1,5 +1,5 @@
 import React from 'react';
-import DesktopHeader from './DesktopHeader'
+import Header from './Header'
 import $ from 'jquery';
 import BookstoreIcon from './images/bookstore.jpg';
 import TabElement from './MainDimensions';
@@ -21,7 +21,7 @@ class MainLanding extends React.Component {
         return (
             <div>
                 <Background/>
-                <DesktopHeader/>
+                <Header size="200"/>
                 <ContentWrapper>
                     <div className="dimension_intro">
                       <Row>

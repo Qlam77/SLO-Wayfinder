@@ -1,7 +1,7 @@
 import React from 'react'
 import {MenuItem} from 'react-bootstrap'
 import firebase from 'firebase'
-import DesktopHeader from './DesktopHeader'
+import Header from './Header'
 import ContentWrapper from "./ContentWrapper";
 import ContentHeader from "./ContentHeader";
 import {Row, Col} from "react-bootstrap";
@@ -77,7 +77,7 @@ class Info extends React.Component {
         return(
             <div>
                 <Background/>
-                <DesktopHeader/>
+                <Header size="200"/>
                 {linkDescription}
             </div>
         );

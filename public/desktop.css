@@ -8,14 +8,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.highlight-image:hover {
+  border: 5px solid #fdff00;
+}
+
 .backgroundHeader{
     text-align: center;
     padding-bottom: 25px;
 }
 
 .iconHeader {
-  height: 200px;
-  width: 200px;
   margin-top: 10px;
 }
 
