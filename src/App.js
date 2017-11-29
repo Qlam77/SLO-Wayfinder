@@ -6,8 +6,8 @@ import firebase from "firebase";
 class App extends React.Component {
     constructor() {
         super();
-        //initialize firebase
-        const config = {
+        // Initialize Firebase
+        var config = {
             apiKey: "AIzaSyAnUDSCX5OJbc_Fh-lPETezA5y9l27k0-4",
             authDomain: "slo-wayfinding.firebaseapp.com",
             databaseURL: "https://slo-wayfinding.firebaseio.com",
@@ -17,8 +17,7 @@ class App extends React.Component {
         };
         firebase.initializeApp(config);
         this.state = {
-            listOfLocations: [],
-            categoryList: []
+            width: window.innerWidth,
         }
     };
 
@@ -37,14 +36,13 @@ class App extends React.Component {
     render() {
         const { width } = this.state;
         const isMobile = width <= 768;
-
-        if(isMobile) {
+        if(!isMobile) {
             return(
-                <MobileApp db={firebase}/>
+                <DesktopApp db={firebase}/>
             );
         } else {
             return(
-                <DesktopApp db={firebase}/>
+                <MobileApp db={firebase}/>
             );
         }
     }
