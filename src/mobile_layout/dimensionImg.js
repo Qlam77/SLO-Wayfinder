@@ -31,7 +31,7 @@ class DimensionImg extends React.Component {
     }
     render() {
         const imgItem = this.state.imgItem.map((position, index) =>
-            <Section src={position.serviceImg} name={this.props.service} col={12}/>
+            <Section src={position.serviceImg} name={this.props.service}/>
         );
         return (
             <div>

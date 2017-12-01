@@ -16,13 +16,10 @@ class Service extends React.Component {
 
 class Figure extends React.Component {
   render() {
-    const figureStyle = {
-      height: "75px",
-      width: "75px",
-      WebkitFilter: "drop-shadow(0px 0px 5px #666)"
-    };
     return (
-      <img style={figureStyle} src={this.props.src} alt={this.props.name}/>
+      <div className="service_container">
+        <img className="service_image" src={this.props.src} alt={this.props.name}/>
+      </div>
     );
   }
 };

@@ -3,7 +3,7 @@ import React from 'react';
 import {Row, Col, Input} from 'react-materialize';
 import Section from './section';
 import Service from './service';
-import MobileHeader from './mobile_header';
+import Header from '../components/Header';
 import firebase from 'firebase'
 import DimensionImg from './dimensionImg'
 import RelatedLinks from './mobile_related_links'
@@ -14,7 +14,7 @@ class ServiceSelector extends React.Component {
     return(
       <div>
         <Background/>
-        <MobileHeader/>
+        <Header size="150"/>
         <ServiceContainer db={this.props.db} service={this.props.service} />
       </div>
     );
@@ -31,12 +31,8 @@ class ServiceContainer extends React.Component {
 
 
     render() {
-    const containerStyle = {
-      backgroundColor: "#aaaaaa",
-      padding: 50
-    }
     return (
-      <div style={containerStyle} className="center">
+      <div className="mobile_dimensions_container">
         <Row>
             <DimensionImg db={this.props.db} service={this.props.service}/>
         </Row>

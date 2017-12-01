@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 import MenuLinker from './MenuLinker'
 import LinkDescription from './LinkDescription'
 import Description from './MiniLinkDescription'
-import DesktopHeader from "./DesktopHeader";
+import Header from "./Header";
 import MainLandingLinks from "./MainLandingLinks";
 
 class tabElement extends React.Component {
@@ -102,7 +102,7 @@ class tabElement extends React.Component {
                     <Col xs={3} className="dropdown-leftTop2" >
                         <DropdownButton title={<ImageLoader src="./images/environmental.jpg" name="Environmental"/>} key={6} noCaret id={`dropdown-no-caret-$6`}>
                              <LinkDescription title="Environmental WellBeing">
-                                 <Description title="Creaate Space for Your Wellbeing">
+                                 <Description title="Create Space for Your Wellbeing">
                                      Creating and occupying safe, supporting, inclusive and sustainable environments that support wellbeing.
                                  </Description>
                              </LinkDescription>
@@ -151,5 +151,3 @@ class tabElement extends React.Component {
 }
 
 export default tabElement;
-
-
