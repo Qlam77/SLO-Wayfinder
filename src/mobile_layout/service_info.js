@@ -13,14 +13,9 @@ class ServiceInfo extends React.Component {
       <div>
         <Background/>
         <Header size="150"/>
-        <ServiceContainer db={this.props.db} dimension={this.props.dimension} title={this.props.title}/>
+        <ServiceContainer db={this.props.db} dimension={this.props.dimension} title={this.props.title} name={this.props.name}/>
         <h4>Related Links:</h4>
         <MobileRelatedLinks db={this.props.db} service={this.props.dimension}/>
-          <Row>
-            <Col xs={12}>
-                <Link to="/">Back to home</Link>
-            </Col>
-          </Row>
       </div>
     );
   }
@@ -45,7 +40,7 @@ class ServiceContainer extends React.Component {
                 serviceName: snap.key,
                 name: snap.val().Name,
                 desc: snap.val().Desc,
-                link: snap.val().Link,
+                link: snap.val().Link.replace(/^https?:\/\//, ''),
                 img: snap.val().img,
                 category: snap.val().Category
             });
@@ -62,15 +57,23 @@ class ServiceContainer extends React.Component {
             {position.desc}
         </p>
       );
+    const link = this.state.linkDescription.map((position, index) =>
+        <a href={"https://" + position.link}>More Info</a>
+    );
       return (
         <div className="mobile_dimensions_container">
-        <h2 class="mobile_service_header">{this.props.title}</h2>
+        <h2 class="mobile_service_header">{this.props.name}</h2>
             <Row>
               <Section src={this.state.imgItem} col={6}/>
-              <Col xs={6} class="mobile_service_desc">{linkDescription}</Col>
+              <Col xs={6} class="mobile_service_desc">
+                  {linkDescription}
+              </Col>
             </Row>
             <div class="mobile_accordion">
               <InfoContainer db={this.props.db} title={this.props.title}/>
+            </div>
+            <div>
+                {link}
             </div>
         </div>
     );

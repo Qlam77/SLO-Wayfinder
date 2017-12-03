@@ -36,8 +36,18 @@ class MobileRelatedLinks extends React.Component {
     }
 
     render() {
-        const relatedList = this.state.relatedList.map((position, index) =>
-            <Service src={position.iconLink} linkLocation={position.linkName} name={position.name} col={4}/>
+        //sorts the items
+        const relatedListMap = this.state.relatedList.sort(function(a, b) {
+            if(a.name.toLowerCase() < b.name.toLowerCase()) {
+                return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()){
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+        const relatedList = relatedListMap.map((position, index) =>
+            <Service src={position.iconLink} linkLocation={position.linkName} name={position.name} col={4}>{position.name}</Service>
         );
         return (
             <div>

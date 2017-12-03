@@ -15,7 +15,7 @@ class RelatedLinks extends React.Component {
         const rootRef = this.props.db.database().ref().child("0");
         const subRef = rootRef.child("Dimensions");
         const childRef = subRef.child(this.props.information);
-        const serRef = childRef.child("Services");
+        const serRef = childRef.child("Services").orderByChild("Name");
         serRef.once('value', snap => {
             snap.forEach((childSnapshot) => {
                 previousList.push({
@@ -30,10 +30,21 @@ class RelatedLinks extends React.Component {
         });
     }
     render() {
-        const relatedlinksList = this.state.relatedlinksList.map((position, index) =>
-            <Col xs={1}>
+        //sorts the items
+        const relatedListMap = this.state.relatedlinksList.sort(function(a, b) {
+            if(a.name.toLowerCase() < b.name.toLowerCase()) {
+                return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()){
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+
+        const relatedlinksList = relatedListMap.map((position, index) =>
+            <Col sm={1}>
                 {/*Replace Bookstore with array thing*/}
-                <MenuLinker path={"/" + position.linkName} src={position.iconLink} name={position.name}/>
+                <MenuLinker path={"/" + position.linkName} src={position.iconLink} name={position.name}>{position.name}</MenuLinker>
             </Col>
         );
         return (

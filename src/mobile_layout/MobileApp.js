@@ -42,6 +42,7 @@ class MobileApp extends React.Component {
         childRef2.once('value', snap1 => {
             snap1.forEach((childSnapshot1) => {
                 previousList.push({
+                    location: childSnapshot1.key,
                     linkLocation: childSnapshot1.val().Name.replace(/\s/g,''),
                     name: childSnapshot1.val().Name,
                     category: childSnapshot1.val().Category
@@ -63,7 +64,7 @@ class MobileApp extends React.Component {
 
         const serviceSelection = this.state.initialDimensions.map((position, index) =>
             <Route key={index} exact path={"/" + position.linkLocation} render={props => (
-                <ServiceInfo {...props} dimension={position.category} db={this.props.db} title={position.name}/>
+                <ServiceInfo {...props} dimension={position.category} db={this.props.db} title={position.location} name={position.name}/>
             )}/>
         );
 

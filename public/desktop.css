@@ -8,9 +8,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.highlight-image:hover {
+button:hover .highlight-image {
   border: 5px solid #fdff00;
 }
+
+.btn-default {
+    background-color: transparent;
+    border-color: #ccc;
+}
+
+.imageCaption {
+    max-width: 7.5vw;
+    font-size: 14px;
+    white-space: pre-wrap;
+    margin-bottom: 0px;
+}
+
 
 .backgroundHeader{
     text-align: center;
@@ -105,4 +118,12 @@ ul {
 
 .panel-heading a:hover{
     text-decoration: none;
+}
+
+.panel-group {
+    margin-bottom: 0px;
+}
+
+.serviceLink {
+    margin-left: 1%;
 }
