@@ -11,8 +11,8 @@ class MenuLinker extends React.Component {
         };
         return(
             <Link exact to={this.props.path}>
-                <div>
-                    <img style={imageResizer} src={this.props.src} alt={this.props.name}/>
+                <div className="service_container">
+                    <img  className="service_icon" style={imageResizer} src={this.props.src} alt={this.props.name}/>
                     <div className="linkMe">
                         {this.props.children}
                     </div>

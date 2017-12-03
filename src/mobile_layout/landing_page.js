@@ -24,6 +24,11 @@ class ServiceContainer extends React.Component {
   render() {
     return (
       <div className="mobile_dimensions_container">
+      <div className="dimension_intro">
+        <Row>
+          <Col xs={12}><DimensionPar header="Find the Balance in All Eight Dimensions of Your Wellbeing!" cont="BCIT values the whole student and wants to see you thrive in all eight dimensions of your wellbeing. Click on the boxes below to learn about the range of free services and supports that can help you succeed in each dimension of wellbeing throughout your time at BCIT."/></Col>
+        </Row>
+      </div>
         <Row>
           <Col xs={6}><Section src="images/intellectual.jpg" name="Intellectual"/></Col>
           <Col xs={6}><Section src="images/occupational.jpg" name="Occupational"/></Col>

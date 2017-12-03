@@ -33,12 +33,12 @@ class ServiceContainer extends React.Component {
     render() {
     return (
       <div className="mobile_dimensions_container">
-        <Row>
+        <div>
             <DimensionImg db={this.props.db} service={this.props.service}/>
-        </Row>
-        <Row>
+        </div>
+        <div>
             <RelatedLinks db={this.props.db} service={this.props.service}/>
-        </Row>
+        </div>
       </div>
     );
   }

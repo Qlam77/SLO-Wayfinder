@@ -67,7 +67,7 @@ class Info extends React.Component {
                     <Row>
                         <Col xsOffset={9} xs={2}>
                             <div className="endFooter">
-                                <Link to="/"><button>Back to Home</button></Link>
+                                <Link to="/">Back to Home</Link>
                             </div>
                         </Col>
                     </Row>

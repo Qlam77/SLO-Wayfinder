@@ -23,6 +23,11 @@
 
 .contentPar {
   font-size: 16px;
+  white-space: pre-wrap;      /* Webkit */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   word-wrap: break-word;
 }
 
 .contentSubHeader {
@@ -117,17 +122,15 @@
   box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
   overflow-x: hidden;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .miniWrapper {
-  background-color: #00397d;
-  color: white;
+  background-color: #ffffff;
   margin: 1%;
-  padding: 1%;
-  text-transform: uppercase;
-  /*-webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);*/
-  /*-moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);*/
-  /*box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);*/
+  padding: 2%;
+  border: 1px solid #000000;
+  border-radius: 10px;
 }
 
 .dimension_intro {
@@ -137,6 +140,7 @@
   border: 1px solid #000000;
   border-radius: 5px;
   margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .dimension_image {
@@ -148,6 +152,7 @@
 
 .dimension_par_header {
   font-weight: bold;
+  text-align:center;
 }
 
 .dimension_par_content {

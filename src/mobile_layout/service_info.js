@@ -14,8 +14,6 @@ class ServiceInfo extends React.Component {
         <Background/>
         <Header size="150"/>
         <ServiceContainer db={this.props.db} dimension={this.props.dimension} title={this.props.title} name={this.props.name}/>
-        <h4>Related Links:</h4>
-        <MobileRelatedLinks db={this.props.db} service={this.props.dimension}/>
       </div>
     );
   }
@@ -53,28 +51,32 @@ class ServiceContainer extends React.Component {
     }
   render() {
     const linkDescription = this.state.linkDescription.map((position, index) =>
-        <p>
+        <p class="mobile_service_desc">
             {position.desc}
         </p>
       );
     const link = this.state.linkDescription.map((position, index) =>
-        <a href={"https://" + position.link}>More Info</a>
+        <a className="serviceLink" rel="external" href={"https://" + position.link}>Learn more</a>
     );
       return (
         <div className="mobile_dimensions_container">
         <h2 class="mobile_service_header">{this.props.name}</h2>
             <Row>
-              <Section src={this.state.imgItem} col={6}/>
-              <Col xs={6} class="mobile_service_desc">
+              <Section src={this.state.imgItem} col={12}/>
+              <Col xs={12}>
                   {linkDescription}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12}>
+                  {link}
               </Col>
             </Row>
             <div class="mobile_accordion">
               <InfoContainer db={this.props.db} title={this.props.title}/>
             </div>
-            <div>
-                {link}
-            </div>
+            <h4>Related Links:</h4>
+            <MobileRelatedLinks db={this.props.db} service={this.props.dimension}/>
         </div>
     );
   }

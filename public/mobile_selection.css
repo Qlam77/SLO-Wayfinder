@@ -3,11 +3,10 @@
 }
 
 .service_image  {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  display: block;
-  margin: 0px auto;
-  background-color: white;
-  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.serviceLink {
+  margin-left: 5px;
 }

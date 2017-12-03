@@ -28,7 +28,8 @@ class tabElement extends React.Component {
                         </LeftDropdown>
                     </Col>
                     <Col xs={3} className="dropdown-rightTop1">
-                        <RightDropdown db={this.props.db} category="Physical" src="./images/physical.jpg" title="Physical Wellbeing" desc="Wellbeing for Every Body" keyValue="3">                                    Creating opportunities and recognizing the need for sleep,
+                        <RightDropdown db={this.props.db} category="Physical" src="./images/physical.jpg" title="Physical Wellbeing" desc="Wellbeing for Every Body" keyValue="3">                                    
+                        Creating opportunities and recognizing the need for sleep,
                             healthy eating, active living and self-care practices.
                         </RightDropdown>
                     </Col>

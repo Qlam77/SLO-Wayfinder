@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import {Col, Input} from 'react-bootstrap';
+import {Row, Col, Input} from 'react-bootstrap';
 import Section from './section'
 
 class DimensionImg extends React.Component {
@@ -21,6 +21,7 @@ class DimensionImg extends React.Component {
         const childRef = subRef.child(this.props.service);
         childRef.once('value', snap => {
             previousList.push({
+                serviceDesc: snap.val().Desc,
                 serviceImg: snap.val().img,
             });
             //assign local array to this component's array
@@ -31,12 +32,21 @@ class DimensionImg extends React.Component {
     }
     render() {
         const imgItem = this.state.imgItem.map((position, index) =>
-            <Section src={position.serviceImg} name={this.props.service}/>
+            <div>
+              <Section src={position.serviceImg} name={this.props.service}/>
+            </div>
+        );
+
+        const descItem = this.state.imgItem.map((position, index) =>
+        <div className="dimension_intro">
+          <p>{position.serviceDesc}</p>
+        </div>
         );
         return (
-            <div>
-                {imgItem}
-            </div>
+          <div>
+            {imgItem}
+            {descItem}
+          </div>
         );
     }
 };

@@ -52,7 +52,7 @@ class RelatedLinks extends React.Component {
             <div>
                 <Row>
                     <Col xsoffset={1} xs={3}>
-                        <div className="text-center"><h3>Related Services:</h3></div>
+                        <div><h3 className="related_header">Related Services:</h3></div>
                     </Col>
                 </Row>
                 <br/>

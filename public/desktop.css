@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 button:hover .highlight-image {
@@ -13,21 +13,25 @@ button:hover .highlight-image {
 }
 
 .btn-default {
-    background-color: transparent;
-    border-color: #ccc;
+  background-color: transparent;
+  border-color: #ccc;
 }
 
 .imageCaption {
-    max-width: 7.5vw;
-    font-size: 14px;
-    white-space: pre-wrap;
-    margin-bottom: 0px;
+  max-width: 7.5vw;
+  font-size: 16px;
+  white-space: pre-wrap;
+  margin-bottom: 0px;
+  font-weight:bold;
 }
 
+.service_icon {
+  margin: 10px auto;
+}
 
-.backgroundHeader{
-    text-align: center;
-    padding-bottom: 25px;
+.backgroundHeader {
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 .iconHeader {
@@ -35,95 +39,149 @@ button:hover .highlight-image {
 }
 
 .tabs {
-    height: auto;
-    background-color: lightgray;
+  height: auto;
+  background-color: lightgray;
 }
 
 .backgroundImage {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/slo-wayfinding.appspot.com/o/Other%2FHeader.PNG?alt=media&token=0041bf80-6512-42d1-9ffc-509ba3ce0d33');
-    position: fixed;
-    z-index: -1;
-    background-position: -150px -350px;
-    height: 100%;
-    width: 100%;
-    -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
-    margin-bottom: 1%;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/slo-wayfinding.appspot.com/o/Other%2FHeader.PNG?alt=media&token=0041bf80-6512-42d1-9ffc-509ba3ce0d33');
+  position: fixed;
+  z-index: -1;
+  background-position: -150px -350px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.5);
+  margin-bottom: 1%;
 }
 
 .someContent {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
 }
 
 .operations{
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .dropdown-toggle{
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 
 .dropdown {
-    margin-left: 27.5%;
-    margin-right: 25%;
+  margin-left: 27.5%;
+  margin-right: 25%;
 }
 .linkMe{
-    color: blue;
-    display: inline-block;
+  color:black;
+  display: inline-block;
 }
 
 .testWrap {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 .dropup {
-    margin-left: 27.5%;
-    margin-right: 25%;
+  margin-left: 27.5%;
+  margin-right: 25%;
 }
 
 .img-center{
-    margin: auto;
-    display: block;
+  margin: auto;
+  display: block;
 }
 
 .imageResizer {
-    /*Testing*/
-    width: 7.5vw;
-    height: 7.5vw;
+  /*Testing*/
+  width: 7.5vw;
+  height: 7.5vw;
 }
 
 .endFooter {
-    float: right;
+  float: right;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .darkText {
-    color: black;
+  color: black;
 }
 
 .panel-heading {
-    padding: 0;
+  padding: 0;
 }
 
 .panel-heading a {
-    display: block;
-    padding: 1vw;
+  display: block;
+  padding: 1vw;
 }
 
 .panel-heading a:hover{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .panel-group {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .serviceLink {
-    margin-left: 1%;
+  color: white;
+  text-transform: uppercase;
+  background-color: #1f3c5b;
+  border: 1px solid #000000;
+  padding:5px;
+  border-radius:5px;
+  margin: 10px auto;
+}
+
+.serviceLink:hover {
+  color:yellow;
+  text-decoration:none;
+}
+
+.miniWrapper>h3 {
+  margin-top: 10px;
+}
+
+.service_desc {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.endFooter {
+  text-transform: uppercase;
+  background-color: #1f3c5b;
+  border: 1px solid #000000;
+  padding:5px;
+  text-decoration:none;
+  border-radius:5px;
+  margin: 10px auto;
+}
+
+.related_header {
+  background-color: #ffffff;
+  padding: 2%;
+  border: 1px solid #000000;
+  margin-left: 15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.related_header > h3 {
+  margin-top:10px;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.endFooter > a {
+  color:white;
+}
+
+.endFooter > a:hover {
+  color:yellow;
+  text-decoration-line: none;
 }

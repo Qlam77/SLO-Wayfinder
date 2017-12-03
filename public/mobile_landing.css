@@ -22,7 +22,12 @@
     font-size:14px;
   }
 
-  .dimesion_intro {
-    padding: 10px;
+  .dimension_intro {
+    margin-top:10px;
+  }
+
+  .serviceLink {
+    font-size: 12px;
+    margin: 10px auto;
   }
 }
