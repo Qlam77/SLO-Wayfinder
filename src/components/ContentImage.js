@@ -14,6 +14,7 @@ class ContentImage extends React.Component {
                         </figcaption>
                     </figure>
                 </MiniWrapper>
+                <a className="serviceLink" rel="external" href={"https://" + this.props.linkLocation}>More Info</a>
             </Col>
         );
     }

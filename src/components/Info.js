@@ -31,7 +31,7 @@ class Info extends React.Component {
                 serviceName: snap.key,
                 name: snap.val().Name,
                 desc: snap.val().Desc,
-                link: snap.val().Link,
+                link: snap.val().Link.replace(/^https?:\/\//, ''),
                 img: snap.val().img,
                 category: snap.val().Category
             });
@@ -53,7 +53,7 @@ class Info extends React.Component {
 
                     {/*Fill the left panel with an image and description*/}
                     <Row>
-                        <ContentImage image={position.img}>
+                        <ContentImage image={position.img} linkLocation={position.link}>
                             {position.desc}
                         </ContentImage>
 

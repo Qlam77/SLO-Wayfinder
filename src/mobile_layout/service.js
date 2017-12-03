@@ -7,7 +7,7 @@ class Service extends React.Component {
     return (
       <Col xs={this.props.col}>
         <Link to={this.props.linkLocation}>
-          <Figure src={this.props.src} alt={this.props.name}/>
+            <Figure src={this.props.src} alt={this.props.name}>{this.props.children}</Figure>
         </Link>
       </Col>
     );
@@ -19,6 +19,9 @@ class Figure extends React.Component {
     return (
       <div className="service_container">
         <img className="service_image" src={this.props.src} alt={this.props.name}/>
+          <div>
+              {this.props.children}
+          </div>
       </div>
     );
   }

@@ -29,7 +29,17 @@ class RelatedLinks extends React.Component {
         });
     }
     render() {
-        const relatedlinksList = this.state.relatedlinksList.map((position, index) =>
+        //sorts the items
+        const relatedListMap = this.state.relatedlinksList.sort(function(a, b) {
+            if(a.name.toLowerCase() < b.name.toLowerCase()) {
+                return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()){
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+        const relatedlinksList = relatedListMap.map((position, index) =>
             <Col sm={6}>
                 <MenuLinker path={"/" + position.linkName} src={position.iconLink} name={position.name}>{position.name}</MenuLinker>
             </Col>
