@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62752f2d-daae-4e68-aee5-3bce09936d16" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/desktop_layout/Info.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/BCIT_SA.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Centre for Workplace Education.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/ContemplationRoom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Counselling.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Disability Resource Centre.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Financial Aid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Harassment and Discrimination.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Health Services.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Indigenous Services.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/International.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Library Services.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Parking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Recreation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Safety and Security.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/Student Life.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/StudentLife2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bcit_cmyk_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bcit_k.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bcit_k.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bcit_logo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bcitsa advicacy office.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bcitsa advicacy office.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bookstore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bookstore.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/bookstore2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/centre for workplace education.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/centre for workplace education2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/counselling.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/counselling2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/disability resource centre.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/disability resource centre2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/eJobs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/eJobs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/ejob2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/environmental.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/financial aid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/financial aid2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/financial.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/food services.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/food services.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/harassment and discrimination office.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/harassment and discrimination office.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/health.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/health.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/indigenous.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/indigenous.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/information.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/information.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/intellectual.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/international.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/international2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/learning commons.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/learning commons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/library.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/library.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/occupational.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/parking.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/parking2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/physical.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/psychological.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/recreation.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/recreation2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/safety and security.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/safety and security2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/social.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/spiritual.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/student association.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/student life.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/student life2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/trades learning.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/trades learning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/images/trollindigenous.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/information_pages/infoResources/infoBody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/information_pages/infoResources/infoHead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/information_pages/infoResources/infoLinks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mobile_layout/searchbar.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/AccordionContent.js" afterPath="$PROJECT_DIR$/src/shared_components/AccordionContent.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/AccordionTrigger.js" afterPath="$PROJECT_DIR$/src/shared_components/AccordionTrigger.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Background.js" afterPath="$PROJECT_DIR$/src/shared_components/Background.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ContentHeader.js" afterPath="$PROJECT_DIR$/src/desktop_layout/ContentHeader.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ContentImage.js" afterPath="$PROJECT_DIR$/src/desktop_layout/ContentImage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ContentWrapper.js" afterPath="$PROJECT_DIR$/src/desktop_layout/ContentContainer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/DesktopApp.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DesktopApp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/DimensionImage.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DimensionImage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/DimensionPar.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DimensionPar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Header.js" afterPath="$PROJECT_DIR$/src/shared_components/Header.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/ImageLoader.js" afterPath="$PROJECT_DIR$/src/desktop_layout/ImageLoader.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/LinkDescription.js" afterPath="$PROJECT_DIR$/src/shared_components/LinkDescription.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MainDimensions.js" afterPath="$PROJECT_DIR$/src/desktop_layout/MainDimensions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MainLanding.js" afterPath="$PROJECT_DIR$/src/desktop_layout/MainLanding.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MainLandingLinks.js" afterPath="$PROJECT_DIR$/src/desktop_layout/MainLandingLinks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MenuLinker.js" afterPath="$PROJECT_DIR$/src/shared_components/MenuLinker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MiniContentWrapper.js" afterPath="$PROJECT_DIR$/src/desktop_layout/ContentWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/MiniLinkDescription.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DimensionDescription.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/RelatedLinks.js" afterPath="$PROJECT_DIR$/src/shared_components/RelatedLinks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/desktop_figure.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DesktopFigure.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/desktop_left_dropdown.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DesktopLeftDropdown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/desktop_right_dropdown.js" afterPath="$PROJECT_DIR$/src/desktop_layout/DesktopRightDropdown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/dimensionImg.js" afterPath="$PROJECT_DIR$/src/mobile_layout/DimensionImage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/imgSection.js" afterPath="$PROJECT_DIR$/src/mobile_layout/DimensionPortraitImage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/landing_page.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileLanding.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/mobile_related_links.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileRelatedLinks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/section.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileDimension.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/service.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileService.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/service_info.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileServiceInfo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/mobile_layout/service_selection.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileServiceSelection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/desktop.css" afterPath="$PROJECT_DIR$/public/desktop.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/desktop_landing.css" afterPath="$PROJECT_DIR$/public/desktop_landing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mobile_landing.css" afterPath="$PROJECT_DIR$/public/mobile_landing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mobile_selection.css" afterPath="$PROJECT_DIR$/public/mobile_selection.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mobile_layout/MobileApp.js" afterPath="$PROJECT_DIR$/src/mobile_layout/MobileApp.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="DimensionImage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/DimensionImage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DimensionPortraitImage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/DimensionPortraitImage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileApp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileDimension.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileDimension.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileLanding.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileLanding.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileRelatedLinks.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileRelatedLinks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileServiceInfo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileServiceInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileServiceSelection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileServiceSelection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Info.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/desktop_layout/Info.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>accordionTrigger</find>
+      <find>service_</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/wellBeingContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/conceptContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/MiniLinkContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/LinkContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/MainBody.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/Intellectual.js" />
+        <option value="$PROJECT_DIR$/src/components/DesktopHeader.js" />
+        <option value="$PROJECT_DIR$/src/components/DesktopLanding.js" />
+        <option value="$PROJECT_DIR$/src/components/MainLanding.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/Recreation.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/Bookstore.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/information_pages/Ejobs.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/StudentFinancialAid.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/Counselling.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/HarassmentAndDiscrimination.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/tabElement.js" />
+        <option value="$PROJECT_DIR$/src/information_pages/ContemplationRoom.js" />
+        <option value="$PROJECT_DIR$/src/mobile_layout/MobileServiceInfo.js" />
+        <option value="$PROJECT_DIR$/src/mobile_layout/imgSection.js" />
+        <option value="$PROJECT_DIR$/src/mobile_layout/DimensionPortraitImage.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/AccordionContent.js" />
+        <option value="$PROJECT_DIR$/src/components/AccordionTrigger.js" />
+        <option value="$PROJECT_DIR$/src/components/Background.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentImage.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentWrapper.js" />
+        <option value="$PROJECT_DIR$/src/components/DesktopFigure.js" />
+        <option value="$PROJECT_DIR$/src/components/DimensionDescription.js" />
+        <option value="$PROJECT_DIR$/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/ImageLoader.js" />
+        <option value="$PROJECT_DIR$/src/components/Info.js" />
+        <option value="$PROJECT_DIR$/src/components/LinkDescription.js" />
+        <option value="$PROJECT_DIR$/src/components/MenuLinker.js" />
+        <option value="$PROJECT_DIR$/src/mobile_layout/MobileServiceSelection.js" />
+        <option value="$PROJECT_DIR$/src/desktop_layout/Info.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="960" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SLO-Wayfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SLO-Wayfinder" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SLO-Wayfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SLO-Wayfinder" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SLO-Wayfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SLO-Wayfinder" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="desktop_layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chonjou\Desktop\BCIT Documents\CST Level 3\SLO-Wayfinder\src\desktop_layout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\SLO\origin\src\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62752f2d-daae-4e68-aee5-3bce09936d16" name="Default" comment="" />
+      <created>1508197170246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508197170246</updated>
+      <workItem from="1508197171512" duration="9231000" />
+      <workItem from="1509473083872" duration="1879000" />
+      <workItem from="1510679066240" duration="8750000" />
+      <workItem from="1510724621252" duration="4765000" />
+      <workItem from="1512352953565" duration="2032000" />
+      <workItem from="1512355149591" duration="932000" />
+      <workItem from="1512356163385" duration="633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="28222000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.134375" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/LinkContainer.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/MiniLinkContainer.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/Intellectual.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DesktopLanding.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/Student Financial Aid.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/Bookstore.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/information_pages/StudentFinancialAid.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/DesktopHeader.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/tabElement.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/Ejobs.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/Counselling.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/HarassmentAndDiscrimination.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/Recreation.js" />
+    <entry file="file://$PROJECT_DIR$/src/information_pages/ContemplationRoom.js" />
+    <entry file="file://$PROJECT_DIR$/src/shared_components/AccordionContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop_landing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared_components/AccordionTrigger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared_components/Background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="130" column="9" lean-forward="false" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/ContentContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/ContentHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/ContentImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/ContentWrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DesktopApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DesktopFigure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DesktopLeftDropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DesktopRightDropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DimensionDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DimensionImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/DimensionPar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared_components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/ImageLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared_components/LinkDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/MainDimensions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="63" lean-forward="true" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/MainLanding.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/MainLandingLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared_components/MenuLinker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared_components/RelatedLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/DimensionImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/DimensionPortraitImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileDimension.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileLanding.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileRelatedLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileServiceInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobile_layout/MobileServiceSelection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/desktop_layout/Info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+.service_container {
+  padding: 20px;
+}
+
+.service_image  {
+  width: 75px;
+  height: 75px;
+}
+
+.service_link {
+  margin-left: 5px;
+}
