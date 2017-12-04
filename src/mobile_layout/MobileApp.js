@@ -1,8 +1,7 @@
-import { Link,  BrowserRouter } from 'react-router-dom';
+import {BrowserRouter } from 'react-router-dom';
 import {Route, Switch} from 'react-router';
 import React from 'react';
 import LandingPage from './landing_page'
-import firebase from 'firebase'
 import ServiceSelection from './service_selection'
 import ServiceInfo from './service_info'
 

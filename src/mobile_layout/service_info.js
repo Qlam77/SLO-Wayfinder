@@ -1,7 +1,5 @@
-import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import {Row, Col, Input, Accordion, Panel} from 'react-bootstrap';
-import Service from './service';
+import {Row, Col, Accordion, Panel} from 'react-bootstrap';
 import Header from '../components/Header';
 import MobileRelatedLinks from "./mobile_related_links";
 import Section from "./imgSection";
@@ -51,16 +49,16 @@ class ServiceContainer extends React.Component {
     }
   render() {
     const linkDescription = this.state.linkDescription.map((position, index) =>
-        <p class="mobile_service_desc">
+        <p key={index} className="mobile_service_desc">
             {position.desc}
         </p>
       );
     const link = this.state.linkDescription.map((position, index) =>
-        <a className="serviceLink" rel="external" href={"https://" + position.link}>Learn more</a>
+        <a key={index} className="serviceLink" rel="external" href={"https://" + position.link}>Learn more</a>
     );
       return (
         <div className="mobile_dimensions_container">
-        <h2 class="mobile_service_header">{this.props.name}</h2>
+        <h2 className="mobile_service_header">{this.props.name}</h2>
             <Row>
               <Section src={this.state.imgItem} col={12}/>
               <Col xs={12}>
@@ -72,7 +70,7 @@ class ServiceContainer extends React.Component {
                   {link}
               </Col>
             </Row>
-            <div class="mobile_accordion">
+            <div className="mobile_accordion">
               <InfoContainer db={this.props.db} title={this.props.title}/>
             </div>
             <h4>Related Links:</h4>
@@ -113,8 +111,8 @@ class InfoContainer extends React.Component {
     }
   render() {
       const singleLocationList = this.state.locationList.map((position, index) =>
-          <Accordion defaultActiveKey="1">
-              <Panel key={index} header={position.locationName} eventKey="1">
+          <Accordion key={index} defaultActiveKey="1">
+              <Panel header={position.locationName} eventKey="1">
                   <ul>
                       <li><b>Location:</b></li>
                       <li>{position.location}</li>
@@ -144,7 +142,7 @@ class InfoContainer extends React.Component {
               </ul>
           </Panel>
       );
-      if (this.state.locationList.length == 1) {
+      if (this.state.locationList.length === 1) {
         return (
             <div>
                 {singleLocationList}

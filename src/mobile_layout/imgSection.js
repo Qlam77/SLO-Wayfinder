@@ -1,6 +1,5 @@
-import {Link} from 'react-router-dom';
 import React from 'react';
-import {Col, Input} from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 
 class Section extends React.Component {
   render() {
@@ -15,7 +14,7 @@ class Section extends React.Component {
 class Figure extends React.Component {
   render() {
     return (
-      <img class="mobile_service_image" src={this.props.src} alt={this.props.name}/>
+      <img className="mobile_service_image" src={this.props.src} alt={this.props.name}/>
     );
   }
 };

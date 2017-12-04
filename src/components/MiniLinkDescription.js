@@ -1,5 +1,4 @@
 import React from 'react'
-import {MenuItem} from 'react-bootstrap'
 
 class MiniLinkDescription extends React.Component {
     render() {

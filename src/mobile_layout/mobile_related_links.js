@@ -1,6 +1,5 @@
 import React from 'react';
-import {Row, Col, Input} from 'react-bootstrap';
-import Service from './service'
+import Service from './service';
 
 class MobileRelatedLinks extends React.Component {
     constructor(props) {
@@ -47,7 +46,7 @@ class MobileRelatedLinks extends React.Component {
             }
         });
         const relatedList = relatedListMap.map((position, index) =>
-            <Service src={position.iconLink} linkLocation={position.linkName} name={position.name} col={4}>{position.name}</Service>
+            <Service key={index} src={position.iconLink} linkLocation={position.linkName} name={position.name} col={4}>{position.name}</Service>
         );
         return (
             <div>

@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import {Col, Input} from 'react-bootstrap';
 
 class Section extends React.Component {
   render() {

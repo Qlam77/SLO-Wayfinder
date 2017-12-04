@@ -1,14 +1,10 @@
 import React from 'react'
-import {MenuItem} from 'react-bootstrap'
-import firebase from 'firebase'
 import Header from './Header'
 import ContentWrapper from "./ContentWrapper";
 import ContentHeader from "./ContentHeader";
 import {Row, Col} from "react-bootstrap";
 import ContentImage from "./ContentImage";
 import AccordionContent from "./AccordionContent"
-import MenuLinker from "../components/MenuLinker";
-import BookstoreIcon from "../components/images/bookstore.png";
 import {Link} from 'react-router-dom';
 import RelatedLinks from "./RelatedLinks";
 import Background from "./Background"
@@ -53,7 +49,7 @@ class Info extends React.Component {
 
                     {/*Fill the left panel with an image and description*/}
                     <Row>
-                        <ContentImage image={position.img} linkLocation={position.link}>
+                        <ContentImage name={position.name} image={position.img} linkLocation={position.link}>
                             {position.desc}
                         </ContentImage>
 

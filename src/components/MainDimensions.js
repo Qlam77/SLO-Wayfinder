@@ -1,9 +1,5 @@
 import React from 'react';
-import {Row, Col, Dropdown, DropdownButton, ButtonToolbar, MenuItem} from 'react-bootstrap';
-import LinkDescription from './LinkDescription'
-import Description from './MiniLinkDescription'
-import MainLandingLinks from "./MainLandingLinks";
-import Dimensions from './desktop_figure';
+import {Row, Col, ButtonToolbar} from 'react-bootstrap';
 import LeftDropdown from './desktop_left_dropdown';
 import RightDropdown from './desktop_right_dropdown';
 

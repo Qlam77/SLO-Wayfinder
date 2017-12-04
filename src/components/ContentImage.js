@@ -8,9 +8,9 @@ class ContentImage extends React.Component {
             <Col xsOffset={1} xs={4}>
                 <MiniWrapper>
                     <figure>
-                        <img src={this.props.image} className="img-responsive service_portrait"/>
+                        <img src={this.props.image} className="img-responsive service_portrait" alt={this.props.name}/>
                         <p className="service_desc">
-                        {this.props.children}
+                            {this.props.children}
                         </p>
                     </figure>
                     <a className="serviceLink" rel="external" href={"https://" + this.props.linkLocation}>Learn more</a>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col, Dropdown, DropdownButton, MenuItem} from 'react-bootstrap';
+import {DropdownButton, MenuItem} from 'react-bootstrap';
 import LinkDescription from './LinkDescription'
 import Description from './MiniLinkDescription'
 import MainLandingLinks from "./MainLandingLinks";
