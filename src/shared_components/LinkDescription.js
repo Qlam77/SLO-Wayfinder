@@ -1,6 +1,9 @@
 import React from 'react'
 import {MenuItem} from 'react-bootstrap'
 
+/*
+    Displays the link description for the dropdown
+ */
 class LinkDescription extends React.Component {
     render() {
         return(

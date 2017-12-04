@@ -38,11 +38,11 @@ class App extends React.Component {
         const isMobile = width <= 768;
         if(!isMobile) {
             return(
-                <DesktopApp db={firebase}/>
+                <DesktopApp db={firebase} isMounted={true}/>
             );
         } else {
             return(
-                <MobileApp db={firebase}/>
+                <MobileApp db={firebase} isMounted={true}/>
             );
         }
     }

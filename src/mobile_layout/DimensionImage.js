@@ -1,6 +1,9 @@
 import React from 'react';
 import Section from './MobileDimension'
 
+/*
+    Displays dimension image and its caption
+ */
 class DimensionImg extends React.Component {
     constructor(props) {
         super(props);

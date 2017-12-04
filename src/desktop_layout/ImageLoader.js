@@ -1,5 +1,8 @@
 import React from 'react'
 
+/*
+    This component styles the image that is loaded in
+ */
 class ImageLoader extends React.Component {
     render() {
         return(

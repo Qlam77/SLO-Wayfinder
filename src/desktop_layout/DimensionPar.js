@@ -1,5 +1,8 @@
 import React from 'react';
 
+/*
+    This component styles the paragraph that follows the dimension image
+ */
 class DimensionPar extends React.Component {
   render() {
     return (

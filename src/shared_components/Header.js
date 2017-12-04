@@ -1,5 +1,8 @@
 import React from 'react';
 
+/*
+    Displays the bcit logo as a home button link
+ */
 class Header extends React.Component {
     render() {
         return (

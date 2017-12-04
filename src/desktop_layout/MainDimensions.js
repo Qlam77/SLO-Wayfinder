@@ -3,11 +3,14 @@ import {Row, Col, ButtonToolbar} from 'react-bootstrap';
 import LeftDropdown from './DesktopLeftDropdown';
 import RightDropdown from './DesktopRightDropdown';
 
-class tabElement extends React.Component {
+/*
+    Displays the main dimensions on the main landing
+ */
+class MainDimensions extends React.Component {
     render() {
-
         return (
             <ButtonToolbar>
+                {/*Populates first row with dropdown items services based on the orientation on the screen*/}
                 <Row>
                     <Col xs={3} className="dropdown-leftTop1" >
                         <LeftDropdown db={this.props.db} category="Intellectual" src="./images/intellectual.jpg" title="Intellectual Wellbeing" desc="Study Smarter, Not Harder" keyValue="1">
@@ -39,6 +42,8 @@ class tabElement extends React.Component {
                 </Row>
                 <br/>
                 <br/>
+
+                {/*Populates the second row with dropdown items based on their orientation on the screen*/}
                 <Row>
                     <Col xs={3} className="dropdown-leftTop1" >
                         <LeftDropdown db={this.props.db} category="Psychological" src="./images/psychological.jpg" title="Psychological Wellbeing" desc="Make Time for Me Time" keyValue="5">
@@ -66,4 +71,4 @@ class tabElement extends React.Component {
     }
 }
 
-export default tabElement;
+export default MainDimensions;
