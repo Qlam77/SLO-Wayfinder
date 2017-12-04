@@ -1,5 +1,5 @@
 import React from 'react'
-import DesktopApp from './components/DesktopApp';
+import DesktopApp from './desktop_layout/DesktopApp';
 import MobileApp from "./mobile_layout/MobileApp";
 import firebase from "firebase";
 

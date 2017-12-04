@@ -1,9 +1,9 @@
 import {BrowserRouter } from 'react-router-dom';
 import {Route, Switch} from 'react-router';
 import React from 'react';
-import LandingPage from './landing_page'
-import ServiceSelection from './service_selection'
-import ServiceInfo from './service_info'
+import LandingPage from './MobileLanding'
+import ServiceSelection from './MobileServiceSelection'
+import ServiceInfo from './MobileServiceInfo'
 
 class MobileApp extends React.Component {
     //initialize props

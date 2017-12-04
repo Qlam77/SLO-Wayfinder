@@ -17,11 +17,11 @@
   color: black;
 }
 
-.contentHeader {
+.content_header {
   text-align:center;
 }
 
-.contentPar {
+.content_par {
   font-size: 16px;
   white-space: pre-wrap;      /* Webkit */
    white-space: -moz-pre-wrap; /* Firefox */
@@ -30,7 +30,7 @@
    word-wrap: break-word;
 }
 
-.contentSubHeader {
+.content_sub_header {
   font-size: 24px;
 }
 
@@ -125,7 +125,7 @@
   margin-bottom: 10px;
 }
 
-.miniWrapper {
+.mini_wrapper {
   background-color: #ffffff;
   margin: 1%;
   padding: 2%;

@@ -17,7 +17,7 @@ button:hover .highlight-image {
   border-color: #ccc;
 }
 
-.imageCaption {
+.image_caption {
   max-width: 7.5vw;
   font-size: 16px;
   white-space: pre-wrap;
@@ -29,7 +29,7 @@ button:hover .highlight-image {
   margin: 10px auto;
 }
 
-.backgroundHeader {
+.background_header {
   text-align: center;
   padding-bottom: 25px;
 }
@@ -43,7 +43,7 @@ button:hover .highlight-image {
   background-color: lightgray;
 }
 
-.backgroundImage {
+.background_image {
   background-image: url('https://firebasestorage.googleapis.com/v0/b/slo-wayfinding.appspot.com/o/Other%2FHeader.PNG?alt=media&token=0041bf80-6512-42d1-9ffc-509ba3ce0d33');
   position: fixed;
   z-index: -1;
@@ -74,7 +74,7 @@ button:hover .highlight-image {
   margin-left: 27.5%;
   margin-right: 25%;
 }
-.linkMe{
+.link_me{
   color:black;
   display: inline-block;
 }
@@ -93,13 +93,13 @@ button:hover .highlight-image {
   display: block;
 }
 
-.imageResizer {
+.image_resizer {
   /*Testing*/
   width: 7.5vw;
   height: 7.5vw;
 }
 
-.endFooter {
+.end_footer {
   float: right;
 }
 
@@ -107,7 +107,7 @@ ul {
   list-style: none;
 }
 
-.darkText {
+.accordion_text {
   color: black;
 }
 
@@ -128,7 +128,7 @@ ul {
   margin-bottom: 0px;
 }
 
-.serviceLink {
+.service_link {
   color: white;
   text-transform: uppercase;
   background-color: #1f3c5b;
@@ -138,12 +138,12 @@ ul {
   margin: 10px auto;
 }
 
-.serviceLink:hover {
+.service_link:hover {
   color:yellow;
   text-decoration:none;
 }
 
-.miniWrapper>h3 {
+.mini_wrapper>h3 {
   margin-top: 10px;
 }
 
@@ -152,7 +152,7 @@ ul {
   font-size: 14px;
 }
 
-.endFooter {
+.end_footer {
   text-transform: uppercase;
   background-color: #1f3c5b;
   border: 1px solid #000000;
@@ -177,11 +177,11 @@ ul {
   margin-right:0px;
 }
 
-.endFooter > a {
+.end_footer > a {
   color:white;
 }
 
-.endFooter > a:hover {
+.end_footer > a:hover {
   color:yellow;
   text-decoration-line: none;
 }
