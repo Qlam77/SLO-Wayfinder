@@ -1,8 +1,6 @@
 import React from 'react';
-import {Row, Col, Panel, Accordion} from 'react-bootstrap';
+import {Col, Panel, Accordion} from 'react-bootstrap';
 import MiniWrapper from './MiniContentWrapper';
-import firebase from 'firebase'
-import AccordionTrigger from './AccordionTrigger'
 
 class ContentHeader extends React.Component {
     constructor(props) {
@@ -36,8 +34,8 @@ class ContentHeader extends React.Component {
     render() {
         //DO FIREBASE POPULATE FUNCTION HERE FOR EACH CATEGORY
         const singleLocationList = this.state.locationList.map((position, index) =>
-            <Accordion defaultActiveKey="1">
-                <Panel key={index} header={position.locationName} eventKey="1">
+            <Accordion key={index} defaultActiveKey="1">
+                <Panel header={position.locationName} eventKey="1">
                     <ul className="darkText">
                         <li><b>Location:</b></li>
                         <li>{position.location}</li>
@@ -54,7 +52,7 @@ class ContentHeader extends React.Component {
         );
 
         const locationList = this.state.locationList.map((position, index) =>
-            <Panel key={position.locationName} header={position.locationName} eventKey={index}>
+            <Panel key={index} header={position.locationName} eventKey={index}>
                 <ul className="darkText">
                     <li><b>Location:</b></li>
                     <li>{position.location}</li>
@@ -68,7 +66,7 @@ class ContentHeader extends React.Component {
                 </ul>
             </Panel>
         );
-        if(this.state.locationList.length == 1) {
+        if(this.state.locationList.length === 1) {
             return (
                 <Col xsOffset={1} xs={5}>
                     <MiniWrapper>

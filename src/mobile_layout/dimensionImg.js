@@ -1,6 +1,4 @@
-import {Link} from 'react-router-dom';
 import React from 'react';
-import {Row, Col, Input} from 'react-bootstrap';
 import Section from './section'
 
 class DimensionImg extends React.Component {
@@ -32,13 +30,13 @@ class DimensionImg extends React.Component {
     }
     render() {
         const imgItem = this.state.imgItem.map((position, index) =>
-            <div>
+            <div key={index}>
               <Section src={position.serviceImg} name={this.props.service}/>
             </div>
         );
 
         const descItem = this.state.imgItem.map((position, index) =>
-        <div className="dimension_intro">
+        <div key={index} className="dimension_intro">
           <p>{position.serviceDesc}</p>
         </div>
         );

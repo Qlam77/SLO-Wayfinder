@@ -1,5 +1,3 @@
-import { Link,  BrowserRouter } from 'react-router-dom';
-import {Route, Switch} from 'react-router';
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import Section from './section';

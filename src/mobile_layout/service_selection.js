@@ -1,10 +1,5 @@
-import { Link,  BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import {Row, Col, Input} from 'react-materialize';
-import Section from './section';
-import Service from './service';
 import Header from '../components/Header';
-import firebase from 'firebase'
 import DimensionImg from './dimensionImg'
 import RelatedLinks from './mobile_related_links'
 import Background from '../components/Background';

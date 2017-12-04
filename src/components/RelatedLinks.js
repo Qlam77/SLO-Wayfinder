@@ -1,7 +1,6 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import MenuLinker from './MenuLinker';
-import BookstoreIcon from "./images/bookstore.png";
 
 class RelatedLinks extends React.Component {
     constructor(props) {
@@ -24,9 +23,9 @@ class RelatedLinks extends React.Component {
                     name: childSnapshot.val().name
                 });
             });
-            this.setState({
-                relatedlinksList: previousList
-            });
+        });
+        this.setState({
+            relatedlinksList: previousList
         });
     }
     render() {
@@ -42,7 +41,7 @@ class RelatedLinks extends React.Component {
         });
 
         const relatedlinksList = relatedListMap.map((position, index) =>
-            <Col sm={1}>
+            <Col key={index} sm={1}>
                 {/*Replace Bookstore with array thing*/}
                 <MenuLinker path={"/" + position.linkName} src={position.iconLink} name={position.name}>{position.name}</MenuLinker>
             </Col>

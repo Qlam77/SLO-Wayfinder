@@ -40,7 +40,7 @@ class RelatedLinks extends React.Component {
             }
         });
         const relatedlinksList = relatedListMap.map((position, index) =>
-            <Col sm={6}>
+            <Col key={index} sm={6}>
                 <MenuLinker path={"/" + position.linkName} src={position.iconLink} name={position.name}>{position.name}</MenuLinker>
             </Col>
         );

@@ -1,23 +1,13 @@
 import React from 'react';
 import Header from './Header'
-import $ from 'jquery';
-import BookstoreIcon from './images/bookstore.jpg';
 import TabElement from './MainDimensions';
 import ContentWrapper from './ContentWrapper';
-import MiniWrapper from './MiniContentWrapper';
 import {Row, Col} from 'react-bootstrap';
 import Background from './Background';
-import DimensionImage from './DimensionImage';
 import DimensionPar from './DimensionPar';
 
 class MainLanding extends React.Component {
     render() {
-        const myStyle = {
-            height: "200px"
-        };
-        const fixStyle = {
-            display: "inline-block",
-        };
         return (
             <div>
                 <Background/>

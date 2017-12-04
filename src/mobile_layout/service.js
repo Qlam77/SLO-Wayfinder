@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import {Col, Input} from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 
 class Service extends React.Component {
   render() {
