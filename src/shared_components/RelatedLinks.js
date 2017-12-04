@@ -2,6 +2,9 @@ import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import MenuLinker from './MenuLinker';
 
+/*
+    Displays the related links for the service
+ */
 class RelatedLinks extends React.Component {
     constructor(props) {
         super(props);
@@ -10,23 +13,26 @@ class RelatedLinks extends React.Component {
         }
     };
     componentDidMount() {
-        const previousList = this.state.relatedlinksList;
-        const rootRef = this.props.db.database().ref().child("0");
-        const subRef = rootRef.child("Dimensions");
-        const childRef = subRef.child(this.props.information);
-        const serRef = childRef.child("Services").orderByChild("Name");
-        serRef.once('value', snap => {
-            snap.forEach((childSnapshot) => {
-                previousList.push({
-                    iconLink: childSnapshot.val().iconLink,
-                    linkName: childSnapshot.val().name.replace(/\s/g,''),
-                    name: childSnapshot.val().name
+        // Gets the data from firebase
+        if(this.props.isMounted) {
+            const previousList = this.state.relatedlinksList;
+            const rootRef = this.props.db.database().ref().child("0");
+            const subRef = rootRef.child("Dimensions");
+            const childRef = subRef.child(this.props.information);
+            const serRef = childRef.child("Services").orderByChild("Name");
+            serRef.once('value', snap => {
+                snap.forEach((childSnapshot) => {
+                    previousList.push({
+                        iconLink: childSnapshot.val().iconLink,
+                        linkName: childSnapshot.val().name.replace(/\s/g, ''),
+                        name: childSnapshot.val().name
+                    });
+                });
+                this.setState({
+                    relatedlinksList: previousList
                 });
             });
-        });
-        this.setState({
-            relatedlinksList: previousList
-        });
+        }
     }
     render() {
         //sorts the items
@@ -47,7 +53,6 @@ class RelatedLinks extends React.Component {
             </Col>
         );
         return (
-            //DO FIREBASE CATEGORY LINK FUNCTION HERE
             <div>
                 <Row>
                     <Col xsoffset={1} xs={3}>
@@ -56,6 +61,9 @@ class RelatedLinks extends React.Component {
                 </Row>
                 <br/>
                 <Row>
+                    /*
+                        Displays related services
+                     */
                     {relatedlinksList}
                 </Row>
             </div>

@@ -5,6 +5,9 @@ import Background from '../shared_components/Background';
 import Header from '../shared_components/Header';
 import DimensionPar from '../desktop_layout/DimensionPar';
 
+/*
+    Displays the main landing page
+ */
 class MobileLanding extends React.Component {
   render() {
     return (
@@ -18,6 +21,9 @@ class MobileLanding extends React.Component {
   }
 };
 
+/*
+    Sets up the layout of the main landing page
+ */
 class ServiceContainer extends React.Component {
   render() {
     return (

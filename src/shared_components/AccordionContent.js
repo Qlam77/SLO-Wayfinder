@@ -2,7 +2,10 @@ import React from 'react';
 import {Col, Panel, Accordion} from 'react-bootstrap';
 import MiniWrapper from '../desktop_layout/ContentWrapper';
 
-class ContentHeader extends React.Component {
+/*
+    Displays the locations for this service
+ */
+class AccordionContent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,6 +14,7 @@ class ContentHeader extends React.Component {
     };
 
     componentDidMount() {
+        // Gets the data from firebase
         const previousList = this.state.locationList;
         const rootRef = this.props.db.database().ref().child("1");
         const subRef = rootRef.child("Services");
@@ -32,7 +36,9 @@ class ContentHeader extends React.Component {
         });
     }
     render() {
-        //DO FIREBASE POPULATE FUNCTION HERE FOR EACH CATEGORY
+        /*
+            Displays single location
+         */
         const singleLocationList = this.state.locationList.map((position, index) =>
             <Accordion key={index} defaultActiveKey="1">
                 <Panel header={position.locationName} eventKey="1">
@@ -51,6 +57,9 @@ class ContentHeader extends React.Component {
             </Accordion>
         );
 
+        /*
+            Displays multiple locations
+         */
         const locationList = this.state.locationList.map((position, index) =>
             <Panel key={index} header={position.locationName} eventKey={index}>
                 <ul className="accordion_text">
@@ -66,6 +75,10 @@ class ContentHeader extends React.Component {
                 </ul>
             </Panel>
         );
+
+        /*
+            Displays accordion based on size, default open for 1 location, all closed for multiple locations
+         */
         if(this.state.locationList.length === 1) {
             return (
                 <Col xsOffset={1} xs={5}>
@@ -91,4 +104,4 @@ class ContentHeader extends React.Component {
 }
 
 
-export default ContentHeader;
+export default AccordionContent;

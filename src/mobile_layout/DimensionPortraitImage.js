@@ -1,5 +1,8 @@
 import React from 'react';
 
+/*
+    Displays service image
+ */
 class DimensionPortraitImage extends React.Component {
   render() {
     return (

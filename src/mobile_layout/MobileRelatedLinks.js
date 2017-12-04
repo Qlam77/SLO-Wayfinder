@@ -1,6 +1,9 @@
 import React from 'react';
 import Service from './MobileService';
 
+/*
+    Adds the related links to the page
+ */
 class MobileRelatedLinks extends React.Component {
     constructor(props) {
         super(props);
@@ -9,29 +12,31 @@ class MobileRelatedLinks extends React.Component {
         }
     };
     componentDidMount() {
-        //save current array into a local variable
-        const previousList = this.state.relatedList;
-        //target parent from database
-        const rootRef = this.props.db.database().ref().child("0");
-        //look for element called dimensions
-        const subRef = rootRef.child("Dimensions");
-        //get children of this node
-        const serRef = subRef.child(this.props.service);
-        const childRef = serRef.child("Services");
-        childRef.once('value', snap => {
-            snap.forEach((childSnapshot) => {
-                //for each child, get data
-                previousList.push({
-                    iconLink: childSnapshot.val().iconLink,
-                    linkName: childSnapshot.val().name.replace(/\s/g,''),
-                    name: childSnapshot.val().name
+        if(this.props.isMounted) {
+            //save current array into a local variable
+            const previousList = this.state.relatedList;
+            //target parent from database
+            const rootRef = this.props.db.database().ref().child("0");
+            //look for element called dimensions
+            const subRef = rootRef.child("Dimensions");
+            //get children of this node
+            const serRef = subRef.child(this.props.service);
+            const childRef = serRef.child("Services");
+            childRef.once('value', snap => {
+                snap.forEach((childSnapshot) => {
+                    //for each child, get data
+                    previousList.push({
+                        iconLink: childSnapshot.val().iconLink,
+                        linkName: childSnapshot.val().name.replace(/\s/g, ''),
+                        name: childSnapshot.val().name
+                    });
+                });
+                //assign local array to this component's array
+                this.setState({
+                    relatedList: previousList
                 });
             });
-            //assign local array to this component's array
-            this.setState({
-                relatedList: previousList
-            });
-        });
+        }
     }
 
     render() {

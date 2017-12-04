@@ -1,10 +1,13 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
 
+/*
+    Displays the dimension with their services and makes it clickable
+ */
 class MobileDimension extends React.Component {
   render() {
     return (
-        <Link exact to={this.props.name}>
+        <Link to={this.props.name}>
           <Figure src={this.props.src} alt={this.props.name}/>
         </Link>
     );

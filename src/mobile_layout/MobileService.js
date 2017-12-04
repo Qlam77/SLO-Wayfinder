@@ -2,6 +2,9 @@ import {Link} from 'react-router-dom';
 import React from 'react';
 import {Col} from 'react-bootstrap';
 
+/*
+    Displays the services with their associated links on the page
+ */
 class Service extends React.Component {
   render() {
     return (

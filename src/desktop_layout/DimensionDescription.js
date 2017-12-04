@@ -1,5 +1,8 @@
 import React from 'react'
 
+/*
+    Adds a description to the dimension with styling
+ */
 class MiniLinkDescription extends React.Component {
     render() {
         return(
