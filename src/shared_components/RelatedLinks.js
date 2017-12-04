@@ -61,9 +61,7 @@ class RelatedLinks extends React.Component {
                 </Row>
                 <br/>
                 <Row>
-                    /*
-                        Displays related services
-                     */
+                    {/*Displays related services*/}
                     {relatedlinksList}
                 </Row>
             </div>
